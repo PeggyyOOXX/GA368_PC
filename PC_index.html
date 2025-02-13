@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="./PC_assets/img/favicon.ico">
+    <title>GA368 - ĐẠI LÝ ĐÁ GÀ TRỰC TIẾP THOMO SV388, CAMPUCHIA</title>
+    <link href="./PC_assets/css/PC_main.css" rel="stylesheet">
+    <script src="./PC_assets/js/layout.js"></script>
+</head>
+
+<body>
+    <div id="root">
+        <div class="Layout_layoutOverlay">
+            <!--Header-->
+            <div style="position: relative;">
+                <div class="Header1_header1">
+                    <div class="Header1_siteLogo">
+                        <img class="Header1_siteLogoImage" src="./PC_assets/img/ga368-new-logo.webp" alt="SiteLogo">
+                    </div>
+                    <!--Not logged-->
+                    <div class="Header1_loginButton" style="display: none;">
+                        <div class="LoginButtons_loginButtonsOverlay">
+                            <button>Đăng Nhập</button>
+                            <button>Đăng Ký</button>
+                        </div>
+                    </div>
+                    <!--Logged-->
+                    <div class="Header1_loginButton">
+                        <div class="Header1_accountStyles">
+                            <div class="Header1_avatarStyles">
+                                <svg class="MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="PersonIcon">
+                                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
+                                </svg>
+                            </div>
+                            <span>0001231234</span>
+                        </div>
+                        <div class="Header1_balanceSection">
+                            <img class="Header1_iconSize2" src="./PC_assets/img/Balance.webp">
+                            <span class="Header1_balanceStyles">Tổng điểm :</span>
+                            <span class="Header1_balanceAmountStyles">0.00</span>
+                        </div>
+                        <div class="TransactionButtons_loginButtonsOverlay">
+                            <button><img src="./PC_assets/img/Deposit_1.webp">Nạp tiền</button>
+                            <button><img src="./PC_assets/img/Withdrawal_1.webp">Rút Tiền</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="SecondaryHeader_secondaryHeaderOverlay">
+                    <div class="SecondaryHeader_gamesNavigationList">
+                        <div class="SecondaryHeader_gameDaga undefined"></div>
+                        <div class="SecondaryHeader_game">
+                            <img src="./PC_assets/img/SecondaryHeader_game_img.png" alt="Daga" style="width: 24px;">
+                            <span style="font-size: 14px;">Daga</span>
+                        </div>
+                        <div class="SecondaryHeader_divider"></div>
+                    </div>
+                    <!--Not logged-->
+                    <div class="SecondaryHeader_linkWrapper" style="display: none;">
+                        <span class="SecondaryHeader_header1_links">
+                            <img class="SecondaryHeader_header1_icons" src="./PC_assets/img/Deposit_1.webp">
+                            <div>Nạp Tiền</div>
+                        </span>
+                        <span class="SecondaryHeader_header1_links">
+                            <img class="SecondaryHeader_header1_icons" src="./PC_assets/img/Withdrawal_1.webp">
+                            <div>Rút Tiền</div>
+                        </span>
+                        <span class="SecondaryHeader_header1_links">
+                            <img class="SecondaryHeader_header1_icons" src="./PC_assets/img/affiliate_1.webp">
+                            <div>Đại Lý</div>
+                        </span>
+                        <span class="SecondaryHeader_header1_links">
+                            <img class="SecondaryHeader_header1_icons" src="./PC_assets/img/CustomerSupport_1.webp">
+                            <div>Hỗ Trợ</div>
+                        </span>
+                    </div>
+
+                    <!--Logged-->
+                    <div class="SecondaryHeader_linkWrapper">
+                        <span class="SecondaryHeader_header1_links">
+                            <img class="SecondaryHeader_header1_icons" src="./PC_assets/img/PersonFill.webp">
+                            <div>Tài khoản</div>
+                        </span>
+                        <span class="SecondaryHeader_header1_links">
+                            <img class="SecondaryHeader_header1_icons" src="./PC_assets/img/inbox.webp">
+                            <div>Hộp thư</div>
+                        </span>
+                        <span class="SecondaryHeader_header1_links">
+                            <img class="SecondaryHeader_header1_icons" src="./PC_assets/img/affiliate_1.webp">
+                            <div>Đại Lý</div>
+                        </span>
+                        <span class="SecondaryHeader_header1_links">
+                            <img class="SecondaryHeader_header1_icons" src="./PC_assets/img/Addfriend.webp">
+                            <div>Invite</div>
+                        </span>
+                        <span class="SecondaryHeader_header1_links">
+                            <img class="SecondaryHeader_header1_icons" src="./PC_assets/img/Logout-w.webp">
+                            <div>Đăng Xuất</div>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- hover"SecondaryHeader_gamesNavigationList" display-->
+                <div class="ShowGames_headerGameList ShowGames_open" style="display: none;">
+                    <div class="ShowGames_gameImgWrapper">
+                        <img class="SecondaryHeader_header1_icons" src="./PC_assets/img/SecondaryHeader_game_img.png">
+                        <span>Daga</span>
+                        <button>Đặt cược</button>
+                    </div>
+                    
+                </div>
+
+
+            </div>
+
+            <div>
+                <!--輪播-->
+                <div class="MuiBox-root">
+                    <div style="overflow-x: hidden;">
+                        <div class="swipeable-view-container">
+                            <div aria-hidden="true" data-swipeable="true"
+                                style="width: 100%; flex-shrink: 0; overflow: auto;">
+                                <div style="cursor: pointer;">
+                                    <img class="MuiBox-root" src="./PC_assets/img/banner1.jpg" alt="Desktop Image Banner 1">
+                                </div>
+                            </div>
+                            <div aria-hidden="false" data-swipeable="true"
+                                style="width: 100%; flex-shrink: 0; overflow: auto;">
+                                <div style="cursor: pointer;">
+                                    <img class="MuiBox-root" src="./PC_assets/img/banner2.jpg" alt="Desktop Image Banner 2">
+                                </div>
+                            </div>
+                            <div aria-hidden="true" data-swipeable="true"
+                                style="width: 100%; flex-shrink: 0; overflow: auto;">
+                                <div style="cursor: pointer;">
+                                    <img class="MuiBox-root" src="./PC_assets/img/banner3.jpg" alt="Desktop Image Banner 3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="MuiPaper-root" style="padding: 0px 8%;">
+                        <button class="MuiButtonBase-root" tabindex="0" type="button">
+                            <img src="./PC_assets/img/ArrowLeft.webp" alt="left">
+                        </button>
+                        <div class="MuiMobileStepper-dots">
+                            <div class="MuiMobileStepper-dot"></div>
+                            <div class="MuiMobileStepper-dot MuiMobileStepper-dotActive"></div>
+                            <div class="MuiMobileStepper-dot"></div>
+                        </div>
+                        <button class="MuiButtonBase-root" tabindex="0" type="button">
+                            <img src="./PC_assets/img/ArrowRight.webp" alt="right">
+                        </button>
+                    </div>
+                </div>
+                <!--Announcement-->
+                <div class="Home_marqueeWrapper">
+                    <img src="./PC_assets/img/Announcement.webp" alt="announcement">
+                    <marquee>
+                        <span>ĐÁ GÀ GA368 NƠI CÁC CHIẾN KÊ HUYỀN THOẠI THỂ HIỆN CHỈ CÓ TẠI GA368.TODAY</span>
+                    </marquee>
+                </div>
+
+                <div class="Home_backgroundSetter">
+                    <div class="Home_gameCategorySectionWrapper">
+                        <!--Hot-->
+                        <div class="HottestSection_wrapper">
+                            <div class="HottestSection_sectionTitle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="320" height="6" viewBox="0 0 320 6" fill="none">
+                                    <path d="M319.887 3.00002L317 0.113264L314.113 3.00002L317 5.88677L319.887 3.00002ZM317 2.50002L0.5 2.49999L0.5 3.49999L317 3.50002L317 2.50002Z" fill="white"></path>
+                                </svg>
+                                <div class="HottestSection_title">Hot Nhất</div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="320" height="6" viewBox="0 0 320 6" fill="none">
+                                    <path d="M0.113251 2.99999L3 5.88674L5.88675 2.99999L3 0.113236L0.113251 2.99999ZM319.5 2.50002L3 2.49999L3 3.49999L319.5 3.50002L319.5 2.50002Z" fill="white"></path>
+                                </svg>
+                            </div>
+                            <div class="HottestSection_sectionContent">
+                                <div class="HottestSection_imageContainer">
+                                    <div>
+                                        <div class="SingleGameList_sectionContent">
+                                            <div class="SingleGameList_loginForm">
+                                                <div class="LoginButtons_loginButtonsOverlay">
+                                                    <button>Đăng Nhập</button>
+                                                    <button>Đăng Ký</button>
+                                                </div>
+                                            </div>
+                                            <div class="SingleGameList_imageContainer">
+                                                <div style="height: 420px;">
+                                                    <img class="SingleGameList_dagaTitleImage" src="./PC_assets/img/GameRoom.svg" alt="Hottest Image">
+                                                    <button class="SingleGameList_overlayButton">Chơi ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Promotion-->
+                        <div class="PromotionSection_wrapper">
+                            <div class="PromotionSection_title">Khuyến mãi</div>
+                            <div class="PromotionSection_sectionContent">
+                                <div class="PromotionSection_promotionList">
+                                    <div class="PromotionSection_promotionItem">
+                                        <img class="PromotionSection_promotionImage" src="./PC_assets/img/promo1.jpg">
+                                        <span class="PromotionSection_promotionDetailsContainer">
+                                            <div class="PromotionSection_promotionDetails">
+                                                <span class="PromotionSection_promotionTitle">KHUYẾN MÃI NẠP ĐẦU LÊN ĐẾN 6888K</span>
+                                                <span class="PromotionSection_promotionDate">2023-01-13 - 2030-12-31</span>
+                                            </div>
+                                            <button class="PromotionSection_promotionButton" style="cursor: pointer;">Xem Thêm</button>
+                                        </span>
+                                    </div>
+                                    <div class="PromotionSection_promotionItem">
+                                        <img class="PromotionSection_promotionImage" src="./PC_assets/img/promo2.jpg">
+                                        <span class="PromotionSection_promotionDetailsContainer">
+                                            <div class="PromotionSection_promotionDetails">
+                                                <span class="PromotionSection_promotionTitle">KHUYẾN MÃI THẮNG LIÊN TIẾP</span>
+                                                <span class="PromotionSection_promotionDate">2023-11-26 - 2030-12-31</span>
+                                            </div>
+                                            <button class="PromotionSection_promotionButton" style="cursor: pointer;">Xem Thêm</button>
+                                        </span>
+                                    </div>
+                                    <div class="PromotionSection_promotionItem">
+                                        <img class="PromotionSection_promotionImage" src="./PC_assets/img/promo3.jpg">
+                                        <span class="PromotionSection_promotionDetailsContainer">
+                                            <div class="PromotionSection_promotionDetails">
+                                                <span class="PromotionSection_promotionTitle">KHUYẾN MÃI HOÀN TRẢ</span>
+                                                <span class="PromotionSection_promotionDate">2023-11-29 - 2030-12-31</span>
+                                            </div>
+                                            <button class="PromotionSection_promotionButton" style="cursor: pointer;">Xem Thêm</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Details-->
+                        <div class="DetailsSection_wrapper">
+                            <div class="DetailsSection_container">
+                                <div class="DetailsSection_detailsTitle">GA368 Nhà cái uy tín số 1 châu Á</div>
+                                <div class="DetailsSection_detailsDescription">
+                                    GA368 Nhà cái uy tín số 1 châu Á
+                                    GA368 là thương hiệu phát sóng trực tiếp đá gà hằng ngày có tỷ lệ kèo ăn cao, kết
+                                    quả chính xác, cực kỳ hấp dẫn và gay cấn, với các trận gà đẳng cấp tiền lớn đầy kịch
+                                    tính và máu lửa các chiến kê. Chúng tôi có phát sóng đá gà trực tiếp các thể loại
+                                    khác nhau như : gà THOMO CPC1, CPC2, CPC3, CPC4, CPC5, gà PHI, gà THÁI tại GA368
+                                    luôn cam kết kết quả đá gà chính xác trung thực.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Footer-->
+            <div class="Footer_footerOverlay">
+                <div class="Footer1_sponsorsWrapper">
+                    <div class="Footer1_gameList">
+                        <div><span style="margin-right: 5px;">SÒNG BÀI</span><span>|</span></div>
+                        <div><span style="margin-right: 5px;">THỂ THAO</span><span>|</span></div>
+                        <div><span style="margin-right: 5px;">XỔ SỐ</span><span>|</span></div>
+                        <div><span style="margin-right: 5px;">GAME BÀI</span><span>|</span></div>
+                        <div><span style="margin-right: 5px;">BÁN CÁ</span><span>|</span></div>
+                    </div>
+
+                    <div class="Footer1_otherDetails">
+                        <div class="Footer1_otherDetailsList" style="cursor: pointer;">
+                            <img class="Footer1_otherDetailsImage" src="./PC_assets/img/Promotionicon.webp"
+                                alt="Promotion">Khuyến mãi
+                        </div>
+                        <span>|</span>
+                        <div class="Footer1_otherDetailsList" style="cursor: pointer;">
+                            <img class="Footer1_otherDetailsImage" src="./PC_assets/img/SupportIcon.webp"
+                                alt="Support">Hỗ Trợ 24/7
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <img src="./PC_assets/img/footer-sponsor.webp">
+                </div>
+                <div class="Footer_copyrightWrapper">Copyright © GA368. All Rights Reserved 2024.</div>
+            </div>
+        </div>
+    </div>
+
+    <!--Register Modal-->
+    <div class="RegistrationModal_modalOverlay" style="display: none;">
+        <div class="RegistrationModal_logoutOverlay">
+            <div class="Register_registerWrapper">
+                <div class="Register_chickenImageContainer">
+                    <img class="Register_chickenImage" src="./PC_assets/img/register-bg.webp" alt="ChickenFighting">
+                    <img class="Register_logoStyles" src="./PC_assets/img/ga368-new-logo.webp">
+                </div>
+                <div class="Register_formOverlay">
+                    <div class="Register_formWrapper">
+                        <form>
+                            <div class="Register_registerHeader">Đăng ký
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" color="#00C1FE" height="26" width="26" xmlns="http://www.w3.org/2000/svg" style="color: rgb(0, 193, 254); cursor: pointer;">
+                                    <path d="M405 136.798L375.202 107 256 226.202 136.798 107 107 136.798 226.202 256 107 375.202 136.798 405 256 285.798 375.202 405 405 375.202 285.798 256z"></path>
+                                </svg>
+                            </div>
+                            <div class="Register_registerFormbody">
+                                <div>
+                                    <div class="Register_requiredLabel">Số điện thoại <span>*</span></div>
+                                    <div class="Register_formInput">
+                                        <input type="text" placeholder="Số điện thoại" name="phone" required="" value="">
+                                        <div class="Register_leftIconStyles">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" color="#00C1FE" height="24" width="24" xmlns="http://www.w3.org/2000/svg" style="color: rgb(0, 193, 254);">
+                                                <path d="M391 480c-19.52 0-46.94-7.06-88-30-49.93-28-88.55-53.85-138.21-103.38C116.91 298.77 93.61 267.79 61 208.45c-36.84-67-30.56-102.12-23.54-117.13C45.82 73.38 58.16 62.65 74.11 52a176.3 176.3 0 0128.64-15.2c1-.43 1.93-.84 2.76-1.21 4.95-2.23 12.45-5.6 21.95-2 6.34 2.38 12 7.25 20.86 16 18.17 17.92 43 57.83 52.16 77.43 6.15 13.21 10.22 21.93 10.23 31.71 0 11.45-5.76 20.28-12.75 29.81-1.31 1.79-2.61 3.5-3.87 5.16-7.61 10-9.28 12.89-8.18 18.05 2.23 10.37 18.86 41.24 46.19 68.51s57.31 42.85 67.72 45.07c5.38 1.15 8.33-.59 18.65-8.47 1.48-1.13 3-2.3 4.59-3.47 10.66-7.93 19.08-13.54 30.26-13.54h.06c9.73 0 18.06 4.22 31.86 11.18 18 9.08 59.11 33.59 77.14 51.78 8.77 8.84 13.66 14.48 16.05 20.81 3.6 9.53.21 17-2 22-.37.83-.78 1.74-1.21 2.75a176.49 176.49 0 01-15.29 28.58c-10.63 15.9-21.4 28.21-39.38 36.58A67.42 67.42 0 01391 480z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="Register_requiredLabel">Mật khẩu <span>*</span></div>
+                                    <div class="Register_formInput">
+                                        <input type="password" placeholder="Mật khẩu" name="password" required="" value="">
+                                        <div class="Register_leftIconStyles">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" color="#00C1FE" height="24" width="24" xmlns="http://www.w3.org/2000/svg" style="color: rgb(0, 193, 254);">
+                                                <path d="M376 192h-24v-46.7c0-52.7-42-96.5-94.7-97.3-53.4-.7-97.3 42.8-97.3 96v48h-24c-22 0-40 18-40 40v192c0 22 18 40 40 40h240c22 0 40-18 40-40V232c0-22-18-40-40-40zM270 316.8v68.8c0 7.5-5.8 14-13.3 14.4-8 .4-14.7-6-14.7-14v-69.2c-11.5-5.6-19.1-17.8-17.9-31.7 1.4-15.5 14.1-27.9 29.6-29 18.7-1.3 34.3 13.5 34.3 31.9 0 12.7-7.3 23.6-18 28.8zM324 192H188v-48c0-18.1 7.1-35.1 20-48s29.9-20 48-20 35.1 7.1 48 20 20 29.9 20 48v48z"></path>
+                                            </svg>
+                                        </div>
+                                        <img src="./PC_assets/img/CloseEye.webp" alt="close">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="Register_requiredLabel">Xác nhận mật khẩu <span>*</span></div>
+                                    <div class="Register_formInput">
+                                        <input type="password" placeholder=" Xác nhận mật khẩu" name="confirmpassword" required="" value="">
+                                        <div class="Register_leftIconStyles">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" color="#00C1FE" height="24" width="24" xmlns="http://www.w3.org/2000/svg" style="color: rgb(0, 193, 254);">
+                                                <path d="M376 192h-24v-46.7c0-52.7-42-96.5-94.7-97.3-53.4-.7-97.3 42.8-97.3 96v48h-24c-22 0-40 18-40 40v192c0 22 18 40 40 40h240c22 0 40-18 40-40V232c0-22-18-40-40-40zM270 316.8v68.8c0 7.5-5.8 14-13.3 14.4-8 .4-14.7-6-14.7-14v-69.2c-11.5-5.6-19.1-17.8-17.9-31.7 1.4-15.5 14.1-27.9 29.6-29 18.7-1.3 34.3 13.5 34.3 31.9 0 12.7-7.3 23.6-18 28.8zM324 192H188v-48c0-18.1 7.1-35.1 20-48s29.9-20 48-20 35.1 7.1 48 20 20 29.9 20 48v48z"></path>
+                                            </svg>
+                                        </div>
+                                        <img src="./PC_assets/img/CloseEye.webp" alt="close">
+                                    </div>
+                                    <div class="Register_passwordValidation"></div>
+                                </div>
+                                <div>
+                                    <div class="CaptchaInput_requiredLabel">Mã xác nhận<span>*</span></div>
+                                    <div class="CaptchaInput_captchaInput">
+                                        <input type="text" placeholder="Mã xác nhận" name="captcha" required="" value="">
+                                            <img src="./PC_assets/img/Verification.webp" width="100px" alt="captcha">
+                                        <div class="CaptchaInput_leftIconStyles">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="#00C1FE" height="24" width="24" xmlns="http://www.w3.org/2000/svg" style="color: rgb(0, 193, 254);">
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Register_horizontalLine"></div>
+                                <button class="Register_registerButton" type="submit">Đăng ký</button>
+                                <div class="Register_loginSection">Bạn đã có tài khoản?
+                                    <span class="Register_loginLink__4gEo8">Đăng Nhập</span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Login Modal-->
+    <div class="LoginModal_popoverStyles" style="display: none;">
+        <div class="Login_loginWrapper">
+            <div class="Login_formOverlay">
+                <div class="Login_formWrapper">
+                    <form>
+                        <div class="Login_loginHeader">Đăng Nhập<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" color="#00C1FE" height="26" width="26" xmlns="http://www.w3.org/2000/svg" style="color: rgb(0, 193, 254); cursor: pointer;">
+                            <path d="M405 136.798L375.202 107 256 226.202 136.798 107 107 136.798 226.202 256 107 375.202 136.798 405 256 285.798 375.202 405 405 375.202 285.798 256z"></path>
+                            </svg>
+                        </div>
+                        <div class="Login_loginFormbody">
+                            <div>
+                                <div class="Login_requiredLabel">Số Điện Thoại<span>*</span></div>
+                                <div class="Login_formInput">
+                                    <input type="number" placeholder="Tên Đăng Nhập" name="phone" required="" value="">
+                                    <div class="Login_leftIconStyles">
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" color="#00C1FE" height="24" width="24" xmlns="http://www.w3.org/2000/svg" style="color: rgb(0, 193, 254);">
+                                            <path d="M391 480c-19.52 0-46.94-7.06-88-30-49.93-28-88.55-53.85-138.21-103.38C116.91 298.77 93.61 267.79 61 208.45c-36.84-67-30.56-102.12-23.54-117.13C45.82 73.38 58.16 62.65 74.11 52a176.3 176.3 0 0128.64-15.2c1-.43 1.93-.84 2.76-1.21 4.95-2.23 12.45-5.6 21.95-2 6.34 2.38 12 7.25 20.86 16 18.17 17.92 43 57.83 52.16 77.43 6.15 13.21 10.22 21.93 10.23 31.71 0 11.45-5.76 20.28-12.75 29.81-1.31 1.79-2.61 3.5-3.87 5.16-7.61 10-9.28 12.89-8.18 18.05 2.23 10.37 18.86 41.24 46.19 68.51s57.31 42.85 67.72 45.07c5.38 1.15 8.33-.59 18.65-8.47 1.48-1.13 3-2.3 4.59-3.47 10.66-7.93 19.08-13.54 30.26-13.54h.06c9.73 0 18.06 4.22 31.86 11.18 18 9.08 59.11 33.59 77.14 51.78 8.77 8.84 13.66 14.48 16.05 20.81 3.6 9.53.21 17-2 22-.37.83-.78 1.74-1.21 2.75a176.49 176.49 0 01-15.29 28.58c-10.63 15.9-21.4 28.21-39.38 36.58A67.42 67.42 0 01391 480z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="Login_passwordContainer">
+                                    <div class="Login_requiredLabel">Mật Khẩu <span>*</span></div>
+                                    <div class="Login_inputPasswordWrapper Login_formInput">
+                                        <input type="password" placeholder="Xin vui lòng nhập mật khẩu" name="password" required="" value="">
+                                        <div class="Login_leftIconStyles">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" color="#00C1FE" height="24" width="24" xmlns="http://www.w3.org/2000/svg" style="color: rgb(0, 193, 254);">
+                                                <path d="M376 192h-24v-46.7c0-52.7-42-96.5-94.7-97.3-53.4-.7-97.3 42.8-97.3 96v48h-24c-22 0-40 18-40 40v192c0 22 18 40 40 40h240c22 0 40-18 40-40V232c0-22-18-40-40-40zM270 316.8v68.8c0 7.5-5.8 14-13.3 14.4-8 .4-14.7-6-14.7-14v-69.2c-11.5-5.6-19.1-17.8-17.9-31.7 1.4-15.5 14.1-27.9 29.6-29 18.7-1.3 34.3 13.5 34.3 31.9 0 12.7-7.3 23.6-18 28.8zM324 192H188v-48c0-18.1 7.1-35.1 20-48s29.9-20 48-20 35.1 7.1 48 20 20 29.9 20 48v48z"></path>
+                                            </svg>
+                                        </div>
+                                        <img src="./PC_assets/img/CloseEye.webp" alt="close">
+                                    </div>
+                                </div>
+                            </div><button class="Login_submitButton" type="submit">Đăng Nhập</button>
+                            <div class="Login_registerSection">Bạn chưa có tài khoản? <span
+                                    class="Login_loginLink">Đăng ký ngay</span></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Logout Modal-->
+    <div class="LogoutConfirmationModal_modalOverlay" style="display: none;">
+        <div class="LogoutConfirmationModal_logoutOverlay">
+            <div class="LogoutConfirmationModal_logoutImgwrapper">
+                <div><img src="./PC_assets/img/logout.png" alt="logout" width="45"></div>
+                <p>Đăng xuất</p>
+            </div>
+            <div class="LogoutConfirmationModal_logoutMsg">Bạn có chắc chắn rằng bạn muốn <br> thoát ra?</div>
+            <div class="LogoutConfirmationModal_logoutButtons"><button>Không, ở lại</button><button>Vâng, rời
+                    đi</button></div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
