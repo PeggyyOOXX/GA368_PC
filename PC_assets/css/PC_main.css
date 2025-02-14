@@ -3015,8 +3015,8 @@ input::-webkit-inner-spin-button {
     text-decoration: underline
 }
 
-.Promotions_promotionsWrapper__dEYYD {
-    background: url(/static/media/PromotionBkg.4f57b6903bdded9c325b.webp);
+.Promotions_promotionsWrapper {
+    background: url(../img/PromotionBG.webp);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -3025,14 +3025,14 @@ input::-webkit-inner-spin-button {
     padding: 2% 0
 }
 
-.Promotions_promotionListOverlay__P7pHV {
+.Promotions_promotionListOverlay {
     display: flex;
     margin: 0 auto;
     max-width: 1400px;
     width: 80%
 }
 
-.Promotions_promotionListWrapper__3aOFD {
+.Promotions_promotionListWrapper {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background: #b0b7c511;
@@ -3047,7 +3047,7 @@ input::-webkit-inner-spin-button {
     width: 100%
 }
 
-.Promotions_imgWrapper__oSxbU {
+.Promotions_imgWrapper {
     border-radius: 20px;
     height: 180px;
     margin: auto;
@@ -3055,7 +3055,7 @@ input::-webkit-inner-spin-button {
     width: 90%
 }
 
-.Promotions_imgWrapper__oSxbU img {
+.Promotions_imgWrapper img {
     border-radius: 20px;
     cursor: pointer;
     display: flex;
@@ -3064,7 +3064,7 @@ input::-webkit-inner-spin-button {
 }
 
 @media only screen and (max-width:1440px) {
-    .Promotions_promotionListOverlay__P7pHV {
+    .Promotions_promotionListOverlay {
         margin: 0 auto
     }
 }
@@ -3084,20 +3084,20 @@ input::-webkit-inner-spin-button {
     background: var(--gameBtnBkgHover)
 }
 
-.PageBanner_pageBannerWrapper__2ZiZa {
+.PageBanner_pageBannerWrapper {
     align-items: center;
     display: flex;
     justify-content: center;
     padding: 0 8%
 }
 
-.PageBanner_pageBannerContent__e2wAo {
+.PageBanner_pageBannerContent {
     color: var(--lightColor);
     font-style: italic;
     text-shadow: 0 3px 6px #000
 }
 
-.PageBanner_iconTitleWrapper__xH1bD {
+.PageBanner_iconTitleWrapper {
     align-items: center;
     display: flex;
     gap: 10px
@@ -5890,8 +5890,14 @@ input::-webkit-inner-spin-button {
 .LogoutConfirmationModal_logoutButtons button:nth-child(2):hover {
     background: var(--activeBtnHover)
 }
-
-.NotificationModal_popoverStyles__e2cHb {
+.NotificationModal_sectionContent{
+    position: fixed; 
+    top: 82px;
+    right: 10%;
+    z-index: 1000;
+    padding: 20px;
+}
+.NotificationModal_popoverStyles {
     -webkit-backdrop-filter: blur(17.5px);
     backdrop-filter: blur(17.5px);
     background: rgba(30, 33, 52, .65);
@@ -6000,7 +6006,7 @@ input::-webkit-inner-spin-button {
     text-align: left
 }
 
-.NotificationModal_noNotificationWrapper__oNXrj {
+.NotificationModal_noNotificationWrapper {
     align-items: center;
     box-sizing: border-box;
     display: flex;
@@ -6013,7 +6019,7 @@ input::-webkit-inner-spin-button {
     width: 100%
 }
 
-.NotificationModal_noNotificationImageContainer__ZUemX {
+.NotificationModal_noNotificationImageContainer {
     align-items: center;
     display: flex;
     height: 100%;
@@ -6023,7 +6029,7 @@ input::-webkit-inner-spin-button {
     width: 100%
 }
 
-.NotificationModal_noNotificationWrapper__oNXrj h1 {
+.NotificationModal_noNotificationWrapper h1 {
     color: #00c1fe;
     font-size: 24px;
     font-weight: 400;
@@ -6032,7 +6038,7 @@ input::-webkit-inner-spin-button {
     opacity: 1
 }
 
-.NotificationModal_textStyling__2ymQ9 {
+.NotificationModal_textStyling {
     color: #737797;
     font-size: 16px;
     font-weight: 400;
@@ -8223,25 +8229,14 @@ input::-webkit-inner-spin-button {
 }
 
 
-
-/*Logged member center*/
-
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace
-}
-
-
-
-
-
-.Home_backgroundSetter__XE\+95 {
-    background-image: url(/static/media/homepage-bg-img.adbbb67ef0b057e0d435.webp);
+.Home_backgroundSetter {
+    background-image: url(../img/homepage-bg.webp);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain
 }
 
-.Home_gameCategorySectionWrapper__KTKD7 {
+.Home_gameCategorySectionWrapper {
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -8249,7 +8244,7 @@ code {
     padding: 3% 7%
 }
 
-.Home_marqueeWrapper__pLhrZ {
+.Home_marqueeWrapper {
     align-items: center;
     background: linear-gradient(90deg, #040415, #1b2647);
     color: #fff;
@@ -8258,28 +8253,28 @@ code {
     padding: 0 15%
 }
 
-.Home_marqueeWrapper__pLhrZ img {
+.Home_marqueeWrapper img {
     height: 25px;
     padding-right: 10px
 }
 
-.Home_movingBanner__\+srqj {
+.Home_movingBanner {
     padding: 2% 0;
     width: 100%
 }
 
-.Home_movingBanner__\+srqj img {
+.Home_movingBanner img {
     width: 100%
 }
 
 @media only screen and (max-width:1600px) {
-    .Home_gameCategorySectionWrapper__KTKD7 {
+    .Home_gameCategorySectionWrapper {
         padding: 2% 4%
     }
 }
 
 @media only screen and (max-width:1440px) {
-    .Home_gameCategorySectionWrapper__KTKD7 {
+    .Home_gameCategorySectionWrapper {
         padding: 2% 4%
     }
 }
