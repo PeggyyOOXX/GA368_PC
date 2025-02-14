@@ -102,13 +102,15 @@
                         <div class="ProfileLayout_profileLayoutAside">
                             <div class="ProfileLayout_profileTitle">Tài khoản</div>
                             <div class="ProfileLayout_horizontalLine"></div>
-                            <div class="ProfileLayout_pageOption ProfileLayout_activePage">
+                            
+                            <div class="ProfileLayout_pageOption">
                                 <span class="ProfileLayout_pageOptionSide"></span>
                                 <div class="ProfileLayout_pageOptionContainer">
-                                    <img src="./PC_assets/img/profile-b.png">
-                                    <span class="ProfileLayout_pageOptionName ProfileLayout_activePage">Thông tin tài khoản</span>
+                                    <img src="./PC_assets/img/profile-w.png">
+                                    <span class="ProfileLayout_pageOptionName">Thông tin tài khoản</span>
                                 </div>
                             </div>
+
                             <div class="ProfileLayout_pageOption">
                                 <span class="ProfileLayout_pageOptionSide"></span>
                                 <div class="ProfileLayout_pageOptionContainer">
@@ -116,6 +118,7 @@
                                     <span class="ProfileLayout_pageOptionName">Nạp tiền</span>
                                 </div>
                             </div>
+
                             <div class="ProfileLayout_pageOption">
                                 <span class="ProfileLayout_pageOptionSide"></span>
                                 <div class="ProfileLayout_pageOptionContainer">
@@ -123,6 +126,7 @@
                                     <span class="ProfileLayout_pageOptionName">Rút Tiền</span>
                                 </div>
                             </div>
+
                             <div class="ProfileLayout_pageOption">
                                 <span class="ProfileLayout_pageOptionSide"></span>
                                 <div class="ProfileLayout_pageOptionContainer">
@@ -130,6 +134,7 @@
                                     <span class="ProfileLayout_pageOptionName">Quản lý ngân hàng</span>
                                 </div>
                             </div>
+
                             <div class="ProfileLayout_pageOption">
                                 <span class="ProfileLayout_pageOptionSide"></span>
                                 <div class="ProfileLayout_pageOptionContainer">
@@ -137,6 +142,7 @@
                                     <span class="ProfileLayout_pageOptionName">Giao dịch</span>
                                 </div>
                             </div>
+
                             <div class="ProfileLayout_pageOption">
                                 <span class="ProfileLayout_pageOptionSide"></span>
                                 <div class="ProfileLayout_pageOptionContainer">
@@ -144,11 +150,12 @@
                                     <span class="ProfileLayout_pageOptionName">Tất cả các ví</span>
                                 </div>
                             </div>
-                            <div class="ProfileLayout_pageOption">
+
+                            <div class="ProfileLayout_pageOption ProfileLayout_activePage">
                                 <span class="ProfileLayout_pageOptionSide"></span>
                                 <div class="ProfileLayout_pageOptionContainer">
-                                    <img src="./PC_assets/img/resetpassword-w.png">
-                                    <span class="ProfileLayout_pageOptionName">Đặt lại mật khẩu</span>
+                                    <img src="./PC_assets/img/resetpassword-b.png">
+                                    <span class="ProfileLayout_pageOptionName ProfileLayout_activePage">Đặt lại mật khẩu</span>
                                 </div>
                             </div>
                         </div>
@@ -156,11 +163,276 @@
                         <!--tab_content-->
                         <div class="ProfileLayout_profileLayoutMainOverlay">
                             <div class="ProfileLayout_profileLayoutMainWrapper">
-                                <div class="Profile_profileWrapper">
+                                <!--Member info-->
+                                <div class="Profile_profileWrapper" style="display: none;">
                                     <div><span>ID tài khoản</span><span>9772</span></div>
                                     <div><span>Họ Và Tên</span><span>0001231234</span></div>
                                     <div><span>Số điện thoại</span><span>0001231234</span></div>
                                 </div>
+
+                                <!--Deposit-->
+                                <div style="display: none;">
+                                    <div style="width: 100%; display: flex;">
+                                        <div class="RightSection_depositSectionOverlay">
+                                            <div class="RightSection_depositSectionWrapper">
+                                                <div class="RightSection_paymentMethodWrapper">
+                                                    <div class="RightSection_paymentMethodTitle">Chọn Phương Thức</div>
+                                                    <div class="RightSection_companySelection">
+                                                        <div class="RightSection_methodCard RightSection_activeMethod" style="cursor: pointer;">
+                                                            <img class="imgStyle" src="./PC_assets/img/qrcode.png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="RightSection_horizontalLine"></div>
+                                                <div class="RightSection_bankSectionContainer">
+                                                    <div style="margin-bottom: 8px; font-size: 14px;">Các kênh thanh toán</div>
+                                                    <div class="RightSection_bankSectionDropdown">
+                                                        <div tabindex="0" role="combobox" aria-haspopup="listbox" aria-expanded="false" class="combobox"> IE PAY</div>
+                                                        <img class="imgStyle" src="./PC_assets/img/arrowdown.png">
+                                                        <ul role="listbox" class="bankSectionDropdown_dropdownoptions" style="display: none;">
+                                                            <li role="option" tabindex="0">Kpay</li>
+                                                            <li role="option" tabindex="0">IE pay</li>
+                                                        </ul>          
+                                                    </div>
+                                                </div>
+                                                <div class="RightSection_bankSectionContainer">
+                                                    <div style="margin-top: 21px; margin-bottom: 8px; font-size: 14px;">Chọn ngân hàng</div>
+                                                    <div class="RightSection_bankSectionDropdown">
+                                                        <div tabindex="0" role="combobox" aria-haspopup="listbox" aria-expanded="false" class="combobox"> Techcombank</div>
+                                                        <img class="imgStyle" src="./PC_assets/img/arrowdown.png">
+                                                        <ul role="listbox" class="bankSectionDropdown_dropdownoptions" style="display: none;">
+                                                            <li role="option" tabindex="0">Techcombank</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="InputTooltip_depositInput">
+                                                    <div class="InputTooltip_requiredLabel">Số điểm nạp<span>* </span></div>
+                                                    <div class="InputTooltip_inputWrapper">
+                                                        <span style="margin-right: 8px;">
+                                                            <img src="./PC_assets/img/CurrencyIcon.png" alt="CurrencyIcon" style="position: absolute;">
+                                                        </span>
+                                                        <input type="number" placeholder="150K ~ 150,000K" value="">
+                                                        
+                                                        <!-- input amount and display-->
+                                                        <div class="InputTooltip_tooltipWrapper" style="display: none;">
+                                                            <div class="InputTooltip_tooltip">
+                                                                <span>150 ~ 150,000</span>
+                                                                <div class="InputTooltip_arrowDown">
+                                                                    <img src="./PC_assets/img/triangle.webp">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- input amount and display-->
+                                                        <img src="./PC_assets/img/Xclose.png" class="InputTooltip_cancelIcon" style="display: none;">
+                                                    </div>
+                                                    <!-- input amount and display-->
+                                                    <div class="RightSection_depositButtonSection" style="display: none;">
+                                                        <button class="RightSection_depositButton">150K</button>
+                                                        <button class="RightSection_depositButton">300K</button>
+                                                        <button class="RightSection_depositButton">900K</button>
+                                                        <button class="RightSection_depositButton">3 Triệu</button>
+                                                        <button class="RightSection_depositButton">30 Triệu</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="RightSection_errorMsg"></div>
+                                                <div class="PointsConverter_convertionWrapper PointsConverter_depositConvertionWrapper">
+                                                    <div style="font-size: 16px;">Thực tế</div>
+                                                    <div class="PointsConverter_convertionContent">
+                                                        <span>0<span> VND</span></span>
+                                                    </div>
+                                                </div>
+                                                <button class="RightSection_submitButton RightSection_disabled" style="cursor: pointer;">Tiếp theo</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!--Withdraw-->
+                                <div style="display: none;">
+                                    <div class="Withdraw_stepSection">
+                                        <div class="Withdraw_stepcontainer" style="width: 50%;">
+                                            <div class="step1">
+                                                <img src="./PC_assets/img/step1.png">
+                                                <span class="Withdraw_stepText">Số dư</span>
+                                            </div>
+                                            <div class="stepline">
+                                                <img src="./PC_assets/img/stepline.png">
+                                            </div>
+                                            <div class="step2">
+                                                <img src="./PC_assets/img/step2-b.png">
+                                                <div class="Withdraw_stepText">Chọn ngân hàng</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex; gap: 35px; flex-direction: column;">
+                                        <div class="Step1_SelectBankOverlay">
+                                            <div class="Step1_SelectBankWrapper">
+                                                <div class="Step1_withdrawalContainer">
+                                                    <div class="Step1_balanceSection">
+                                                        <img class="Step1_iconSize2" src="./PC_assets/img/Balance.webp" alt="Balance">
+                                                        <span class="Step1_balanceStyles">Tổng số dư:</span>
+                                                        <span class="Step1_balanceAmountStyles">0</span>
+                                                    </div>
+                                                    <div class="Step1_inputDeposit">
+                                                        <div class="InputTooltipV2_depositInputWrapper">
+                                                            <div class="InputTooltipV2_requiredLabel">Số điểm nạp<span> * </span></div>
+                                                            <div class="InputTooltipV2_depositInputContainer">
+                                                                <div class="InputTooltipV2_inputWrapper">
+                                                                    <span style="margin-right: 8px;">
+                                                                        <img src="./PC_assets/img/CurrencyIcon.png" alt="CurrencyIcon" style="position: absolute;">
+                                                                    </span>
+                                                                    <input type="number" placeholder="5 ~ 15,000,000" value="">
+                                                                </div>
+                                                            </div>
+                                                            <span class="InputTooltipV2_inputAmoutRequired">Vui lòng nhập số tiền</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="PointsConverter_convertionWrapper PointsConverter_depositConvertionWrapper">
+                                                        <div style="font-size: 16px;">Thực tế</div>
+                                                        <div class="PointsConverter_convertionContent"><span>0<span> VND</span></span></div>
+                                                    </div>
+                                                    <div class="Step1_minMaxContainer">
+                                                        <div class="Step1_minMaxSection">
+                                                            <span class="Step1_minMaxText">Tối thiểu:</span>
+                                                            <span class="Step1_minMaxValue">5</span>
+                                                        </div>
+                                                        <div class="Step1_minMaxSection">
+                                                            <span class="Step1_minMaxText">Tối đa:</span>
+                                                            <span class="Step1_minMaxValue">15,000,000</span>
+                                                        </div>
+                                                    </div>
+                                                    <button class="Step1_submitButton Step1_disabled" disabled>Tiếp theo</button>
+                                                </div>
+                                                <div class="Step1_walletContainer">
+                                                    <div class="WithdrawWalletSection_walletSection">
+                                                        <div class="WithdrawWalletSection_gameSectionStyles">
+                                                            <div class="WithdrawWalletSection_gameSection">
+                                                                <div class="WithdrawWalletSection_games">
+                                                                    <div class="WithdrawWalletSection_singleGameSection">
+                                                                        <div class="WithdrawWalletSection_singleGameValue">
+                                                                            <img src="./PC_assets/img/SecondaryHeader_game_img.png" alt="Daga Icon" style="height: 30px; padding-right: 4px;">
+                                                                            <span>Daga</span>
+                                                                        </div>
+                                                                        <div style="display: flex;">
+                                                                            <span style="display: flex; align-items: center; font-size: 16px; font-weight: 700; color: rgb(0, 193, 254);">0
+                                                                                <img src="./PC_assets/img/refreshicon.png" style="cursor: pointer; padding-left: 8px; height: 16px;"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="WithdrawWalletSection_horizontalLine"></div>
+                                                        <button class="WithdrawWalletSection_disabledbuttonStyles">Chuyển mọi thứ vào tài khoản chính</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!--Bank Account Management-->
+                                <div class="BankAccountManagement_noAccountWrapper" style="display: none;">
+                                    <div class="BankAccountManagement_allBanksOverlay">
+                                        <div class="BankAccountManagement_errorMsg">Chưa Có Thông Tin Ngân Hàng. Vui Lòng Thêm Ngân Hàng Để Tiếp Tục.</div>
+                                        <div class="BankAccountManagement_addBnksBtn false">
+                                            <img src="./PC_assets/img/circleplus.png" style="height: 18px;">&nbsp;Thêm ngân hàng</div>
+                                    </div>
+                                </div>
+                                
+                                <!--Transactions-->
+                                <div class="Transactions_transactionWrapper" style="display: none;">
+                                    <div class="Transactions_transactionContainer">
+                                        <div class="Transactions_transactionTabSection">
+                                            <div class="Transactions_transactionTab" style="overflow: hidden; margin-bottom: 0px;">
+                                                <div class="Transactions_transactionTabFlex" role="tablist">
+                                                    <button class="Transactions_transactionTabBtn" tabindex="-1" type="button" role="tab" aria-selected="false">Nạp Tiền
+                                                        <span class="Transactions_transactionTabBtnspan"></span>
+                                                    </button>
+                                                    <button class="Transactions_transactionTabBtn selected" tabindex="0" type="button" role="tab" aria-selected="true">Rút Tiền
+                                                        <span class="Transactions_transactionTabBtnspan"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Transactions_noTransaction">
+                                        <h3>Không có giao dịch</h3>
+                                    </div>
+                                </div>
+                                
+                                <!--All Wallet-->
+                                <div class="AllWallet_allWalletOverlay" style="display: none;">
+                                    <div class="AllWalletProfile_walletSection">
+                                        <div class="AllWalletProfile_dagaSection">
+                                            <hr class="AllWalletProfile_lineOne">
+                                            <img class="AllWalletProfile_dagaSectionImg" src="./PC_assets/img/Dagasection.png" alt="Daga section">
+                                            <hr class="AllWalletProfile_lineTwo">
+                                        </div>
+                                        <div class="AllWalletProfile_dagaBalanceWrapper">
+                                            <img src="./PC_assets/img/SecondaryHeader_game_img.png" style="width: 30px; height: 30px;">
+                                            <span style="padding-left: 16px;">ĐÁ GÀ</span>
+                                            <div style="margin-left: auto; display: flex; align-items: center;">
+                                                <span class="AllWalletProfile_dagaBalance__O+0ME">0 điểm</span>
+                                                <span style="display: flex; border-bottom: 1px solid rgb(255, 255, 255);">
+                                                    <span style="padding-right: 4px;">Tải lại ví</span>
+                                                    <img src="./PC_assets/img/refreshicon.png" style="cursor: pointer; padding-left: 4px; height: 16px;">
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="AllWalletProfile_gameSectionStyles"></div>
+                                        <button disabled class="AllWalletProfile_disabledbuttonStyles">Chuyển mọi thứ vào tài khoản chính</button>
+                                    </div>
+                                </div>
+                                
+                                <!--Reset Password-->
+                                <div class="ResetPassword_modalMainWrapper">
+                                    <div class="ResetPassword_modalWrapper">
+                                        <div class="ResetPassword_titleWrapper">
+                                            <p>Thay đổi mật khẩu</p>
+                                        </div>
+                                        <div class="ResetPassword_smallContent">
+                                            <span>Bạn vừa thực hiện yêu cầu đổi mật khẩu, Vui lòng thay đổi mật khẩu mới và lưu trữ nó cho lần đăng nhập tiếp theo.</span>
+                                        </div>
+                                        <form>
+                                            <div class="ResetPassword_inputWrapperDiv">
+                                                <div>
+                                                    <div class="ResetPassword_requiredLabel">Mật khẩu cũ<span>*</span></div>
+                                                    <div class="ResetPassword_inputPasswordWrapper ResetPassword_formInput">
+                                                        <input type="password" placeholder="Mật khẩu cũ" name="username" required="" value="">
+                                                        <div class="ResetPassword_leftIconStyles">
+                                                            <img src="./PC_assets/img/lock.png">
+                                                        </div>
+                                                        <img src="./PC_assets/img/noeye.png" class="ResetPassword_passwordEye">
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="ResetPassword_requiredLabel">Mật khẩu mới<span>*</span></div>
+                                                    <div class="ResetPassword_inputPasswordWrapper ResetPassword_formInput">
+                                                        <input type="password" placeholder="Mật khẩu mới" name="username" required="" value="">
+                                                        <div class="ResetPassword_leftIconStyles">
+                                                            <img src="./PC_assets/img/lock.png">    
+                                                        </div>
+                                                        <img src="./PC_assets/img/noeye.png" class="ResetPassword_passwordEye">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="ResetPassword_requiredLabel">Xác nhận mật khẩu mới<span>*</span></div>
+                                                    <div class="ResetPassword_inputPasswordWrapper ResetPassword_formInput">
+                                                        <input type="password" placeholder="Xác nhận mật khẩu mới" name="username" required="" value="">
+                                                        <div class="ResetPassword_leftIconStyles">
+                                                            <img src="./PC_assets/img/lock.png">
+                                                        </div>
+                                                        <img src="./PC_assets/img/noeye.png" class="ResetPassword_passwordEye">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="ResetPassword_btn" type="submit" disabled>Xác nhận</button>
+                                        </form>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
