@@ -306,7 +306,7 @@
     </div>
 
     <!--Register Modal-->
-    <div class="RegistrationModal_modalOverlay" style="display: none;">
+    <div class="RegistrationModal_modalOverlay">
         <div class="RegistrationModal_logoutOverlay">
             <div class="Register_registerWrapper">
                 <div class="Register_chickenImageContainer">
@@ -331,7 +331,17 @@
                                                 <path d="M391 480c-19.52 0-46.94-7.06-88-30-49.93-28-88.55-53.85-138.21-103.38C116.91 298.77 93.61 267.79 61 208.45c-36.84-67-30.56-102.12-23.54-117.13C45.82 73.38 58.16 62.65 74.11 52a176.3 176.3 0 0128.64-15.2c1-.43 1.93-.84 2.76-1.21 4.95-2.23 12.45-5.6 21.95-2 6.34 2.38 12 7.25 20.86 16 18.17 17.92 43 57.83 52.16 77.43 6.15 13.21 10.22 21.93 10.23 31.71 0 11.45-5.76 20.28-12.75 29.81-1.31 1.79-2.61 3.5-3.87 5.16-7.61 10-9.28 12.89-8.18 18.05 2.23 10.37 18.86 41.24 46.19 68.51s57.31 42.85 67.72 45.07c5.38 1.15 8.33-.59 18.65-8.47 1.48-1.13 3-2.3 4.59-3.47 10.66-7.93 19.08-13.54 30.26-13.54h.06c9.73 0 18.06 4.22 31.86 11.18 18 9.08 59.11 33.59 77.14 51.78 8.77 8.84 13.66 14.48 16.05 20.81 3.6 9.53.21 17-2 22-.37.83-.78 1.74-1.21 2.75a176.49 176.49 0 01-15.29 28.58c-10.63 15.9-21.4 28.21-39.38 36.58A67.42 67.42 0 01391 480z"></path>
                                             </svg>
                                         </div>
+                                        <!--Error and display-->
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="32" width="32" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 0, 0); margin-right: 10px; cursor: pointer;">
+                                            <path
+                                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z">
+                                            </path>
+                                        </svg>
                                     </div>
+
+                                    <!--Error and display-->
+                                    <div class="Register_error">Sai quy cách SĐT</div>
+                                    <div class="Register_error">Vui lòng nhập 10 ký tự</div>
                                 </div>
                                 <div>
                                     <div class="Register_requiredLabel">Mật khẩu <span>*</span></div>
@@ -343,6 +353,60 @@
                                             </svg>
                                         </div>
                                         <img src="./PC_assets/img/CloseEye.webp" alt="close">
+                                    </div>
+
+                                    <!--Error and display-->
+                                    <div style="margin-top: 7px;">
+                                        <!--Error-->
+                                        <div class="Register_passwordValidation">
+                                            <span style="margin-bottom: 0px;">
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1" viewBox="0 0 48 48" enable-background="new 0 0 48 48" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="#D50000"
+                                                        d="M24,6C14.1,6,6,14.1,6,24s8.1,18,18,18s18-8.1,18-18S33.9,6,24,6z M24,10c3.1,0,6,1.1,8.4,2.8L12.8,32.4 C11.1,30,10,27.1,10,24C10,16.3,16.3,10,24,10z M24,38c-3.1,0-6-1.1-8.4-2.8l19.6-19.6C36.9,18,38,20.9,38,24C38,31.7,31.7,38,24,38 z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <span class="Register_error">Mật khẩu phải có chữ IN HOA</span>
+                                        </div>
+                                        <div class="Register_passwordValidation">
+                                            <span style="margin-bottom: 0px;">
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1" viewBox="0 0 48 48" enable-background="new 0 0 48 48" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="#D50000"
+                                                        d="M24,6C14.1,6,6,14.1,6,24s8.1,18,18,18s18-8.1,18-18S33.9,6,24,6z M24,10c3.1,0,6,1.1,8.4,2.8L12.8,32.4 C11.1,30,10,27.1,10,24C10,16.3,16.3,10,24,10z M24,38c-3.1,0-6-1.1-8.4-2.8l19.6-19.6C36.9,18,38,20.9,38,24C38,31.7,31.7,38,24,38 z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <span class="Register_error">Mật khẩu phải có chữ thường</span>
+                                        </div>
+                                        <!--Success-->
+                                        <div class="Register_passwordValidation">
+                                            <span style="margin-bottom: 0px;">
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1" viewBox="0 0 48 48" enable-background="new 0 0 48 48" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle fill="#4CAF50" cx="24" cy="24" r="21"></circle>
+                                                    <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"></polygon>
+                                                </svg>
+                                            </span>
+                                            <span class="Register_success">Mật khẩu phải có số (0~ 9)</span>
+                                        </div>
+                                        <div class="Register_passwordValidation">
+                                            <span style="margin-bottom: 0px;">
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1" viewBox="0 0 48 48" enable-background="new 0 0 48 48" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="#D50000"
+                                                        d="M24,6C14.1,6,6,14.1,6,24s8.1,18,18,18s18-8.1,18-18S33.9,6,24,6z M24,10c3.1,0,6,1.1,8.4,2.8L12.8,32.4 C11.1,30,10,27.1,10,24C10,16.3,16.3,10,24,10z M24,38c-3.1,0-6-1.1-8.4-2.8l19.6-19.6C36.9,18,38,20.9,38,24C38,31.7,31.7,38,24,38 z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <span class="Register_error">Mật khẩu cần dài hơn 8 ký tự và ngắn hơn 12 ký tự.</span>
+                                        </div>
+                                        <div class="Register_passwordValidation">
+                                            <span style="margin-bottom: 0px;">
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1" viewBox="0 0 48 48" enable-background="new 0 0 48 48" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle fill="#4CAF50" cx="24" cy="24" r="21"></circle>
+                                                    <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"></polygon>
+                                                </svg>
+                                            </span>
+                                            <span class="Register_success">Không chứa ký tự đặc biệt, dấu cách</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div>
@@ -356,8 +420,33 @@
                                         </div>
                                         <img src="./PC_assets/img/CloseEye.webp" alt="close">
                                     </div>
-                                    <div class="Register_passwordValidation"></div>
+                                    
+                                    <!--Error and display-->
+                                    <div style="margin-top: 7px;">
+                                        <!--Error-->
+                                        <div class="Register_passwordValidation">
+                                            <span style="margin-bottom: 0px;">
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1" viewBox="0 0 48 48" enable-background="new 0 0 48 48" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="#D50000"
+                                                        d="M24,6C14.1,6,6,14.1,6,24s8.1,18,18,18s18-8.1,18-18S33.9,6,24,6z M24,10c3.1,0,6,1.1,8.4,2.8L12.8,32.4 C11.1,30,10,27.1,10,24C10,16.3,16.3,10,24,10z M24,38c-3.1,0-6-1.1-8.4-2.8l19.6-19.6C36.9,18,38,20.9,38,24C38,31.7,31.7,38,24,38 z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <span class="Register_error">Xác nhận mật khẩu không trùng khớp với mật khẩu.</span>
+                                        </div>
+                                        <!--Success-->
+                                        <div class="Register_passwordValidation">
+                                            <span style="margin-bottom: 0px;">
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1" viewBox="0 0 48 48" enable-background="new 0 0 48 48" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle fill="#4CAF50" cx="24" cy="24" r="21"></circle>
+                                                    <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"></polygon>
+                                                </svg>
+                                            </span>
+                                            <span class="Register_success">Mật khẩu trùng khớp.</span>
+                                        </div>
+                                    </div>
                                 </div>
+                                
                                 <div>
                                     <div class="CaptchaInput_requiredLabel">Mã xác nhận<span>*</span></div>
                                     <div class="CaptchaInput_captchaInput">
