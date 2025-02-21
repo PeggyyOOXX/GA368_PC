@@ -2,3 +2,4 @@
 /PC_index.html<br>
 /profile.html<br>
 /promotion.html<br>
+/gamelinks.html<br>
