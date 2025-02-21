@@ -127,15 +127,6 @@
                 </div>
             </div>
 
-
-
-            
-            
-
-
-
-
-
             <div>
                 <!--輪播-->
                 <div class="MuiBox-root">
@@ -306,7 +297,7 @@
     </div>
 
     <!--Register Modal-->
-    <div class="RegistrationModal_modalOverlay">
+    <div class="RegistrationModal_modalOverlay" style="display: none;">
         <div class="RegistrationModal_logoutOverlay">
             <div class="Register_registerWrapper">
                 <div class="Register_chickenImageContainer">
@@ -518,6 +509,38 @@
         </div>
     </div>
 
+    <!--AllWallet Modal-->
+    <div class="WalletModal_popoverStyles" style="display: none;">
+        <div class="WalletModal_loginHeader">Tất cả các ví
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" color="#00C1FE" height="26" width="26" xmlns="http://www.w3.org/2000/svg" style="color: rgb(0, 193, 254); cursor: pointer;">
+                <path
+                    d="M405 136.798L375.202 107 256 226.202 136.798 107 107 136.798 226.202 256 107 375.202 136.798 405 256 285.798 375.202 405 405 375.202 285.798 256z">
+                </path>
+            </svg>
+        </div>
+        <div class="GameListing_walletSection">
+            <div class="GameListing_dagaSection">
+                <hr class="GameListing_lineOne">
+                <img class="GameListing_dagaSectionImg" src="./PC_assets/img/Dagasection.png" alt="Daga Section">
+                <hr class="GameListing_lineTwo">
+            </div>
+            <div class="GameListing_dagaBalanceWrapper">
+                <img src="./PC_assets/img/SecondaryHeader_game_img.png" style="width: 30px; height: 30px;">
+                <span style="padding-left: 16px;">ĐÁ GÀ</span>
+                <div style="margin-left: auto; display: flex; align-items: center;">
+                    <span class="GameListing_dagaBalance">0 điểm</span>
+                    <span>
+                        <span style="display: flex; border-bottom: 1px solid rgb(255, 255, 255);">
+                            <span style="padding-right: 4px;">Tải lại ví</span>
+                            <img src="./PC_assets/img/refreshicon.png" style="cursor: pointer; padding-left: 4px; height: 16px;"></span>
+                        </span>
+                    </div>
+            </div>
+            <div class="GameListing_gameSectionStyles"></div>
+            <button disabled class="GameListing_disabledbuttonStyles">Chuyển mọi thứ vào tài khoản chính</button>
+        </div>
+    </div>
+
     <!--Logout Modal-->
     <div class="LogoutConfirmationModal_modalOverlay" style="display: none;">
         <div class="LogoutConfirmationModal_logoutOverlay">
@@ -539,7 +562,7 @@
             <div class="PromotionPopup_modalWrapper">
                 <div class="PromotionPopup_modalContent">
                     <span class="PromotionPopup_closeIcon">
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" fill-rule="evenodd" class="PromotionPopup_icon__fqVDf" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" fill-rule="evenodd" class="PromotionPopup_icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                             <path d="M799.855 166.312c.023.007.043.018.084.059l57.69 57.69c.041.041.052.06.059.084a.118.118 0 0 1 0 .069c-.007.023-.018.042-.059.083L569.926 512l287.703 287.703c.041.04.052.06.059.083a.118.118 0 0 1 0 .07c-.007.022-.018.042-.059.083l-57.69 57.69c-.041.041-.06.052-.084.059a.118.118 0 0 1-.069 0c-.023-.007-.042-.018-.083-.059L512 569.926 224.297 857.629c-.04.041-.06.052-.083.059a.118.118 0 0 1-.07 0c-.022-.007-.042-.018-.083-.059l-57.69-57.69c-.041-.041-.052-.06-.059-.084a.118.118 0 0 1 0-.069c.007-.023.018-.042.059-.083L454.073 512 166.371 224.297c-.041-.04-.052-.06-.059-.083a.118.118 0 0 1 0-.07c.007-.022.018-.042.059-.083l57.69-57.69c.041-.041.06-.052.084-.059a.118.118 0 0 1 .069 0c.023.007.042.018.083.059L512 454.073l287.703-287.702c.04-.041.06-.052.083-.059a.118.118 0 0 1 .07 0Z"></path>
                         </svg>
                     </span>
@@ -619,7 +642,7 @@
             <div class="PromotionPopup_modalWrapper">
                 <div class="PromotionPopup_modalContent">
                     <span class="PromotionPopup_closeIcon">
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" fill-rule="evenodd" class="PromotionPopup_icon__fqVDf" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" fill-rule="evenodd" class="PromotionPopup_icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                             <path d="M799.855 166.312c.023.007.043.018.084.059l57.69 57.69c.041.041.052.06.059.084a.118.118 0 0 1 0 .069c-.007.023-.018.042-.059.083L569.926 512l287.703 287.703c.041.04.052.06.059.083a.118.118 0 0 1 0 .07c-.007.022-.018.042-.059.083l-57.69 57.69c-.041.041-.06.052-.084.059a.118.118 0 0 1-.069 0c-.023-.007-.042-.018-.083-.059L512 569.926 224.297 857.629c-.04.041-.06.052-.083.059a.118.118 0 0 1-.07 0c-.022-.007-.042-.018-.083-.059l-57.69-57.69c-.041-.041-.052-.06-.059-.084a.118.118 0 0 1 0-.069c.007-.023.018-.042.059-.083L454.073 512 166.371 224.297c-.041-.04-.052-.06-.059-.083a.118.118 0 0 1 0-.07c.007-.022.018-.042.059-.083l57.69-57.69c.041-.041.06-.052.084-.059a.118.118 0 0 1 .069 0c.023.007.042.018.083.059L512 454.073l287.703-287.702c.04-.041.06-.052.083-.059a.118.118 0 0 1 .07 0Z"></path>
                         </svg>
                     </span>
@@ -717,7 +740,7 @@
         <div class="PromotionPopup_modalWrapper">
             <div class="PromotionPopup_modalContent">
                 <span class="PromotionPopup_closeIcon">
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" fill-rule="evenodd" class="PromotionPopup_icon__fqVDf" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" fill-rule="evenodd" class="PromotionPopup_icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                         <path d="M799.855 166.312c.023.007.043.018.084.059l57.69 57.69c.041.041.052.06.059.084a.118.118 0 0 1 0 .069c-.007.023-.018.042-.059.083L569.926 512l287.703 287.703c.041.04.052.06.059.083a.118.118 0 0 1 0 .07c-.007.022-.018.042-.059.083l-57.69 57.69c-.041.041-.06.052-.084.059a.118.118 0 0 1-.069 0c-.023-.007-.042-.018-.083-.059L512 569.926 224.297 857.629c-.04.041-.06.052-.083.059a.118.118 0 0 1-.07 0c-.022-.007-.042-.018-.083-.059l-57.69-57.69c-.041-.041-.052-.06-.059-.084a.118.118 0 0 1 0-.069c.007-.023.018-.042.059-.083L454.073 512 166.371 224.297c-.041-.04-.052-.06-.059-.083a.118.118 0 0 1 0-.07c.007-.022.018-.042.059-.083l57.69-57.69c.041-.041.06-.052.084-.059a.118.118 0 0 1 .069 0c.023.007.042.018.083.059L512 454.073l287.703-287.702c.04-.041.06-.052.083-.059a.118.118 0 0 1 .07 0Z"></path>
                     </svg>
                 </span>
@@ -749,6 +772,92 @@
             </div>
         </div>
     </div>
+
+    <!--Transfer points-->
+    <div class="PlayGameModal_modalTopOverlay">
+        <div class="PlayGameModal_modalTopWrapper">
+            <div class="PlayGameModal_modalOverlay">
+                <div class="PlayGameModal_modalWrapper">
+
+                    <div class="PlayGameModal_playGameheader">
+                        <div class="PlayGameModal_balanceSectionWrapper">
+                            <div class="PlayGameModal_dbIconWrapper">
+                                <img src="./PC_assets/img/Balance.webp" alt="balance Img">
+                            </div>
+                            <div style="color: rgb(0, 193, 254); font-size: 32px; font-weight: 700;">
+                                <span style="font-size: 20px; color: rgb(255, 255, 255); font-weight: 500;">Tổng số dư: </span>
+                                <span>11.55</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 10px;">
+                        <div class="PlayGameModal_playGameBody">
+                            <div class="PlayGameModal_playGameBodyDataHeading">
+                                <span>ĐÁ GÀ</span>
+                                <span>Chuyển điểm
+                                    <span style="margin-left: 3px;">(VND)</span>
+                                </span>
+                            </div>
+
+                            <!--point>0-->
+                            <div class="PlayGameModal_playGameBodyDataValue" style="display: none;">
+                                <div class="PlayGameModal_gameBalanceWrapper">
+                                    <button style="cursor: pointer; background: none; border: none;">
+                                        <img src="./PC_assets/img/turnback.png" style="width: 30px;height: 30px;">
+                                    </button>
+                                    <span class="PlayGameModal_balance">1</span>
+                                    <img src="./PC_assets/img/refreshicon.png" alt="Reload">
+                                </div>
+                                <div class="PlayGameModal_pointsContent">
+                                    <input type="text" placeholder="1" value="">
+                                </div>
+                            </div>
+                            <!--point=0-->
+                            <div class="PlayGameModal_playGameBodyDataValue">
+                                <div class="PlayGameModal_gameBalanceWrapper">
+                                    <span class="PlayGameModal_balance">0</span>
+                                    <img src="./PC_assets/img/refreshicon.png" alt="Reload"></div>
+                                <div class="PlayGameModal_pointsContent">
+                                    <input type="text" placeholder="1" value="" required="">
+                                </div>
+                            </div>
+
+                            <div class="PlayGameModal_transferAllBtnWrapper">
+                                <div class="PlayGameModal_transferAllBtn">Chuyển tất cả điểm</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--point error-->
+                    <div class="PlayGameModal_loadingErrorWrapper" style="display: none;">
+                        <strong>Nhập số tiền hợp lệ</strong>
+                    </div>
+                    
+                    <div class="MaxMinLimit_maxMinWrapper">
+                        <div>
+                            <span>Min:</span>
+                            <span class="MaxMinLimit_maxMinValue"> 1 </span>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="PointsConverter_convertionWrapper">
+                        <div style="font-size: 16px;"></div>
+                        <div class="PointsConverter_convertionContent"><span>0</span></div>
+                    </div>
+
+                    <!--Btn click-->
+                    <div class="PlayGameModal_playGameFooter" style="display: none;">
+                        <button>Chơi ngay</button>
+                    </div>
+                    <!--Btn can't click-->
+                    <div class="PlayGameModal_playGameFooterDisable">
+                        <button disabled>Chơi ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
 
 </body>
 
