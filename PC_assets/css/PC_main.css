@@ -373,15 +373,25 @@ code {
     width: 100%
 }
 
-.PlayGameModal_modalTopOverlay__1E9yR {
+.PlayGameModal_modalTopOverlay {
     align-items: center;
-    background: var(--modalOverlayBkg);
     display: flex;
     height: 100vh;
-    justify-content: center
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background: var(--modalOverlayBkg);
+}
+.PlayGameModal_modalTopWrapper{
+    width: 100%;
+    position: relative;
 }
 
-.PlayGameModal_modalOverlay__rOnwf {
+.PlayGameModal_modalOverlay {
     align-items: center;
     display: flex;
     height: 100%;
@@ -390,7 +400,7 @@ code {
     width: 100%
 }
 
-.PlayGameModal_modalWrapper__oi5t- {
+.PlayGameModal_modalWrapper {
     background: linear-gradient(180deg, #1e2134, #2c386e);
     border: .3px solid var(--pageBorder);
     border-radius: var(--modalRadius);
@@ -401,11 +411,11 @@ code {
     width: 500px
 }
 
-.PlayGameModal_modalWrapper__oi5t-:focus {
+.PlayGameModal_modalWrapper:focus {
     outline: none
 }
 
-.PlayGameModal_playGameheader__KRk2E {
+.PlayGameModal_playGameheader {
     border-bottom: 1px dotted var(--pageBorder);
     color: var(--lightColor);
     display: flex;
@@ -414,29 +424,29 @@ code {
     padding-bottom: 8px
 }
 
-.PlayGameModal_balanceSectionWrapper__hdYi3 {
+.PlayGameModal_balanceSectionWrapper {
     align-items: center;
     display: flex;
     gap: 3px
 }
 
-.PlayGameModal_dbIconWrapper__fMTEw {
+.PlayGameModal_dbIconWrapper {
     display: flex
 }
 
-.PlayGameModal_dbIconWrapper__fMTEw img {
+.PlayGameModal_dbIconWrapper img {
     height: 40px;
     width: 40px
 }
 
-.PlayGameModal_playGameBody__bUbO6 {
+.PlayGameModal_playGameBody {
     display: flex;
     justify-content: space-between;
     padding: 20px 0 0;
     width: 100%
 }
 
-.PlayGameModal_playGameBodyDataHeading__WSmS0 {
+.PlayGameModal_playGameBodyDataHeading {
     color: var(--lightColor);
     display: flex;
     flex-direction: column;
@@ -445,7 +455,7 @@ code {
     justify-content: center
 }
 
-.PlayGameModal_playGameBodyDataValue__0KSOi {
+.PlayGameModal_playGameBodyDataValue {
     color: var(--lightColor);
     display: flex;
     flex-direction: column;
@@ -454,19 +464,19 @@ code {
     width: 35%
 }
 
-.PlayGameModal_gameBalanceWrapper__ap3qG {
+.PlayGameModal_gameBalanceWrapper {
     align-items: center;
     display: flex;
     gap: 5px
 }
 
-.PlayGameModal_gameBalanceWrapper__ap3qG img {
+.PlayGameModal_gameBalanceWrapper img {
     cursor: pointer;
     height: 16px;
     padding-left: 10px
 }
 
-.PlayGameModal_balance__Ouyj6 {
+.PlayGameModal_balance {
     color: var(--goldColor);
     font-size: 18px
 }
@@ -481,7 +491,7 @@ code {
     width: 80px
 }
 
-.PlayGameModal_pointsContent__xfeJ9 {
+.PlayGameModal_pointsContent {
     align-items: flex-end;
     align-items: flex-start;
     display: flex;
@@ -489,7 +499,7 @@ code {
     gap: 10px
 }
 
-.PlayGameModal_pointsContent__xfeJ9 input {
+.PlayGameModal_pointsContent input {
     background-color: initial;
     border: none;
     border-bottom: 1px solid var(--lightColor);
@@ -499,7 +509,7 @@ code {
     width: 100%
 }
 
-.PlayGameModal_pointsContent__xfeJ9 input:focus {
+.PlayGameModal_pointsContent input:focus {
     outline: none
 }
 
@@ -510,14 +520,14 @@ code {
     justify-content: flex-end
 }
 
-.PlayGameModal_transferAllBtnWrapper__aQe5o {
+.PlayGameModal_transferAllBtnWrapper {
     align-items: end;
     display: flex;
     justify-content: center;
     width: 30%
 }
 
-.PlayGameModal_transferAllBtn__RXrFr {
+.PlayGameModal_transferAllBtn {
     background: linear-gradient(180deg, #06bbf7, #17346c);
     border: 1px solid #06b9f3;
     border-radius: 3px;
@@ -528,22 +538,22 @@ code {
     text-align: center
 }
 
-.PlayGameModal_transferAllBtn__RXrFr:hover {
+.PlayGameModal_transferAllBtn:hover {
     background: linear-gradient(1turn, #15c7fe 100%, #e9fef7 0)
 }
 
-.PlayGameModal_loadingErrorWrapper__yP\+Pb {
+.PlayGameModal_loadingErrorWrapper {
     text-align: center
 }
 
-.PlayGameModal_loadingErrorWrapper__yP\+Pb strong {
+.PlayGameModal_loadingErrorWrapper strong {
     color: var(--redColor);
     display: flex;
     justify-content: center;
     margin-top: 15px
 }
 
-.PlayGameModal_loadingErrorWrapper__yP\+Pb span {
+.PlayGameModal_loadingErrorWrapper span {
     color: var(--lightColor)
 }
 
@@ -554,14 +564,14 @@ code {
     text-align: center
 }
 
-.PlayGameModal_playGameFooterDisable__D2uSk,
-.PlayGameModal_playGameFooter__D7EvJ {
+.PlayGameModal_playGameFooterDisable,
+.PlayGameModal_playGameFooter {
     display: flex;
     flex-direction: column
 }
 
-.PlayGameModal_playGameFooterDisable__D2uSk button,
-.PlayGameModal_playGameFooter__D7EvJ button {
+.PlayGameModal_playGameFooterDisable button,
+.PlayGameModal_playGameFooter button {
     border: 1px solid var(--disableBkg);
     border-radius: 25px;
     color: var(--disableColor);
@@ -571,11 +581,11 @@ code {
     text-align: center
 }
 
-.PlayGameModal_playGameFooterDisable__D2uSk button {
+.PlayGameModal_playGameFooterDisable button {
     cursor: not-allowed !important
 }
 
-.PlayGameModal_playGameFooter__D7EvJ button {
+.PlayGameModal_playGameFooter button {
     background: var(--activeBtn);
     background: linear-gradient(180deg, #06bbf7, #17346c);
     border: 1px solid #06b9f3;
@@ -583,7 +593,7 @@ code {
     color: var(--lightColor)
 }
 
-.PlayGameModal_playGameFooter__D7EvJ button:hover {
+.PlayGameModal_playGameFooter button:hover {
     background: var(--activeBtnHover)
 }
 
@@ -621,7 +631,7 @@ code {
     font-weight: 700
 }
 
-.MaxMinLimit_maxMinWrapper__tpBzo {
+.MaxMinLimit_maxMinWrapper {
     color: var(--lightColor);
     display: flex;
     justify-content: space-between
@@ -631,7 +641,7 @@ code {
     flex-direction: column
 }
 
-.MaxMinLimit_maxMinValue__kusaJ {
+.MaxMinLimit_maxMinValue {
     color: #00c1fe;
     font-size: 18px;
     font-weight: 700
@@ -1571,7 +1581,7 @@ code {
     opacity: .3
 }
 
-.Register_error__-UOFL {
+.Register_error {
     align-items: center;
     color: var(--redColor);
     display: flex;
@@ -1609,7 +1619,7 @@ code {
     display: flex
 }
 
-.Register_success__uKBTg {
+.Register_success {
     color: #41df60;
     font-size: .9rem
 }
@@ -1715,7 +1725,7 @@ code {
     padding: 10px 0
 }
 
-.CustomerSupportAnimatedItem_buttonWrapper__wooZM {
+.CustomerSupportAnimatedItem_buttonWrapper {
     align-items: center;
     background: var(--goldBtnBkg);
     border: 1px solid var(--lightColor);
@@ -1729,12 +1739,12 @@ code {
     padding: 10px 0
 }
 
-.CustomerSupportAnimatedItem_buttonWrapper__wooZM span {
+.CustomerSupportAnimatedItem_buttonWrapper span {
     display: flex;
     gap: 5px
 }
 
-.CustomerSupportAnimatedItem_buttonWrapper__wooZM:hover {
+.CustomerSupportAnimatedItem_buttonWrapper:hover {
     background: var(--goldBtnBkgHover)
 }
 
@@ -2383,7 +2393,7 @@ input::-webkit-inner-spin-button {
     width: 96px
 }
 
-.PromotionPopup_modalOverlay__ytH8f {
+.PromotionPopup_promotionOverlay {
     align-items: center;
     display: flex;
     height: 100%;
@@ -2392,7 +2402,7 @@ input::-webkit-inner-spin-button {
     width: 100%
 }
 
-.PromotionPopup_modalWrapper__TwSoJ {
+.PromotionPopup_modalWrapper {
     background: var(--modalBkg);
     border: 1px solid var(--lightColor);
     border-radius: 7px;
@@ -2402,19 +2412,19 @@ input::-webkit-inner-spin-button {
     width: 455px
 }
 
-.PromotionPopup_modalContent__ML626 {
+.PromotionPopup_modalContent {
     display: flex;
     flex-direction: column;
     gap: 8px;
     height: 100%
 }
 
-.PromotionPopup_closeIcon__GXpkU {
+.PromotionPopup_closeIcon {
     padding-right: 10px;
     text-align: right
 }
 
-.PromotionPopup_icon__fqVDf {
+.PromotionPopup_icon {
     background: var(--lightBtn);
     border-radius: 50%;
     color: var(--darkColor);
@@ -2423,12 +2433,12 @@ input::-webkit-inner-spin-button {
     padding: 2px
 }
 
-.PromotionPopup_icon__fqVDf:hover {
+.PromotionPopup_icon:hover {
     background: var(--activeBtn);
     color: var(--lightColor)
 }
 
-.PromotionPopup_innerContent__GpzJh {
+.PromotionPopup_innerContent {
     color: var(--lightColor);
     display: flex;
     flex-direction: column;
@@ -2437,54 +2447,54 @@ input::-webkit-inner-spin-button {
     padding: 0 15px
 }
 
-.PromotionPopup_innerContent__GpzJh img {
+.PromotionPopup_innerContent img {
     border: 1px solid var(--lightColor);
     border-radius: 7px
 }
 
-.PromotionPopup_innerContent__GpzJh span {
+.PromotionPopup_innerContent span {
     color: var(--lightColor) !important
 }
 
-.PromotionPopup_title__ToQtT {
+.PromotionPopup_title {
     font-size: 1.3rem
 }
 
-.PromotionPopup_dates__cKEP3 {
+.PromotionPopup_dates {
     font-size: .8rem
 }
 
-.PromotionPopup_dates__cKEP3 table tbody tr td {
+.PromotionPopup_dates table tbody tr td {
     border: 1px solid var(--lightColor) !important
 }
 
-.PromotionPopup_dates__cKEP3 p {
+.PromotionPopup_dates p {
     background: transparent !important
 }
 
 @media only screen and (max-width:414px) {
-    .PromotionPopup_modalWrapper__TwSoJ {
+    .PromotionPopup_modalWrapper {
         padding: 5px 0;
         width: 95%
     }
 
-    .PromotionPopup_icon__fqVDf {
+    .PromotionPopup_icon {
         font-size: 18px
     }
 
-    .PromotionPopup_modalContent__ML626 {
+    .PromotionPopup_modalContent {
         gap: 5px
     }
 
-    .PromotionPopup_innerContent__GpzJh {
+    .PromotionPopup_innerContent {
         padding: 0 7px
     }
 
-    .PromotionPopup_innerContent__GpzJh span {
+    .PromotionPopup_innerContent span {
         font-size: 14px
     }
 
-    .PromotionPopup_title__ToQtT {
+    .PromotionPopup_title {
         font-size: 1.1rem !important
     }
 }
@@ -3143,14 +3153,14 @@ input::-webkit-inner-spin-button {
     width: 100%
 }
 
-.PromotionPopup_modalOverlay__QCTCZ {
-    align-items: center;
+.PromotionPopup_modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
     background: var(--modalOverlayBkg);
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    position: absolute;
-    width: 100%
 }
 
 .PromotionPopup_modalWrapper__v2ICt {
@@ -3602,45 +3612,45 @@ input::-webkit-inner-spin-button {
     }
 }
 
-.CopyItem_bankDetailItem__V4Vi3 {
+.CopyItem_bankDetailItem {
     display: flex;
     justify-content: space-between;
     padding: 5px 0;
     width: 100%
 }
 
-.CopyItem_homeMsg__KqB5L {
+.CopyItem_homeMsg {
     gap: 30px;
     justify-content: space-around
 }
 
-.CopyItem_divWrapper__Xma5F {
+.CopyItem_divWrapper {
     display: flex;
     flex-direction: column;
     gap: 2px
 }
 
-.CopyItem_copyLabel__Xk8LP {
+.CopyItem_copyLabel {
     color: var(--lightColor);
     font-size: 14px;
     font-weight: 600
 }
 
-.CopyItem_copyValue__o-\+01 {
+.CopyItem_copyValue {
     color: var(--primaryColor);
     font-size: 18px;
     font-weight: 600
 }
 
-.CopyItem_smallValue__REdwd {
+.CopyItem_smallValue {
     font-size: 12px
 }
 
-.CopyItem_redText__LwIfZ {
+.CopyItem_redText {
     color: var(--redColor)
 }
 
-.CopyItem_copyButton__rsN9m {
+.CopyItem_copyButton {
     align-items: center;
     color: var(--primaryColor);
     cursor: pointer;
@@ -3649,11 +3659,11 @@ input::-webkit-inner-spin-button {
     justify-content: space-evenly
 }
 
-.CopyItem_copyButton__rsN9m span {
+.CopyItem_copyButton span {
     font-size: 14px
 }
 
-.CopyItem_copyButton__rsN9m:active {
+.CopyItem_copyButton:active {
     padding: 2px 5px
 }
 
@@ -4157,37 +4167,37 @@ input::-webkit-inner-spin-button {
     text-align: center
 }
 
-.Transactions_transactionTable__Vyqmh {
+.Transactions_transactionTable {
     padding: 30px 0 10px
 }
 
-.Transactions_transactionTable__Vyqmh table {
+.Transactions_transactionTable table {
     text-align: left;
     width: 100%
 }
 
-.Transactions_transactionTable__Vyqmh table thead tr th {
+.Transactions_transactionTable table thead tr th {
     color: var(--primaryColor);
     font-size: 15px;
     font-weight: 600
 }
 
-.Transactions_transactionTable__Vyqmh table tbody {
+.Transactions_transactionTable table tbody {
     padding-top: 7.4px
 }
 
-.Transactions_transactionTable__Vyqmh table tbody tr {
+.Transactions_transactionTable table tbody tr {
     cursor: pointer;
     font-size: 13.5;
     font-weight: 100;
     margin: 4px 0
 }
 
-.Transactions_transactionTable__Vyqmh table tbody tr td {
+.Transactions_transactionTable table tbody tr td {
     padding: 4px
 }
 
-.Transactions_chip__iQQbY {
+.Transactions_chip {
     background-color: #1a2b44;
     border: 1px solid #94a9c6;
     border-radius: 7px;
@@ -4206,51 +4216,51 @@ input::-webkit-inner-spin-button {
     color: #ffc36a
 }
 
-.Transactions_successChip__Ts4HE {
+.Transactions_successChip {
     background-color: #004430;
     border-color: #00ffb5;
-    color: #00ffb5
+    color: #00ffb5;
 }
 
-.Transactions_rejectChip__9KsrE {
+.Transactions_rejectChip {
     background-color: #4d000a;
     border-color: #ff5757;
-    color: #ff5757
+    color: #ff5757;
 }
 
 .Transactions_noTransaction {
     margin-top: 50px;
     max-width: 480px;
-    text-align: center
+    text-align: center;
 }
 
-.Transactions_closeTransaction__09Seo {
-    display: none
+.Transactions_closeTransaction {
+    display: none;
 }
 
-.Transactions_openTransaction__7W0S7 {
-    display: inline-block
+.Transactions_openTransaction {
+    display: inline-block;
 }
 
-.SingleTransactionPopup_singleTransactionContainer__S29Cv {
+.SingleTransactionPopup_singleTransactionContainer {
     margin-left: 40px;
-    width: auto
+    width: auto;
 }
 
-.SingleTransactionPopup_singleTranContentOverlay__xn80V {
+.SingleTransactionPopup_singleTranContentOverlay {
     display: flex;
     height: 100%;
     justify-content: center;
     margin: auto;
-    width: 100%
+    width: 100%;
 }
 
-.SingleTransactionPopup_singleTranContentWrapper__jGyf\+ {
+.SingleTransactionPopup_singleTranContentWrapper {
     padding: 20px;
     width: 500px
 }
 
-.SingleTransactionPopup_titleWrapper__k0Or0 {
+.SingleTransactionPopup_titleWrapper {
     align-items: center;
     border-bottom: 1px solid var(--pageBorder);
     color: var(--lightColor);
@@ -4261,11 +4271,11 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px
 }
 
-.SingleTransactionPopup_titleWrapper__k0Or0 h3 {
+.SingleTransactionPopup_titleWrapper h3 {
     margin: 0
 }
 
-.SingleTransactionPopup_closeIcon__7OiZA {
+.SingleTransactionPopup_closeIcon {
     display: flex
 }
 
@@ -5127,23 +5137,23 @@ input::-webkit-inner-spin-button {
     padding: 16px
 }
 
-.AllWalletProfile_dagaBalance__O\+0ME {
+.AllWalletProfile_dagaBalance {
     color: #00c1fe;
     font-weight: 700;
     margin-right: 8px
 }
 
-.AllWalletProfile_dagaRefreshIcon__r2y45 {
+.AllWalletProfile_dagaRefreshIcon {
     cursor: pointer
 }
 
-.AllWalletProfile_otherGameSection__SZnQf {
+.AllWalletProfile_otherGameSection {
     display: flex;
     justify-content: center;
     position: relative
 }
 
-.AllWalletProfile_otherGameBalances__bvlBd {
+.AllWalletProfile_otherGameBalances {
     align-items: center;
     color: #00c1fe;
     display: flex;
@@ -5159,7 +5169,7 @@ input::-webkit-inner-spin-button {
     margin-bottom: 12px;
 }
 
-.AllWalletProfile_gameSection__wEvav {
+.AllWalletProfile_gameSection {
     color: #fff;
     font-weight: 400 !important;
     margin-bottom: 5px;
@@ -5169,7 +5179,7 @@ input::-webkit-inner-spin-button {
     width: 100%
 }
 
-.AllWalletProfile_games__ExQRw {
+.AllWalletProfile_games {
     background: #1e2134;
     border-radius: 16px;
     display: flex;
@@ -5179,7 +5189,7 @@ input::-webkit-inner-spin-button {
     padding: 10px
 }
 
-.AllWalletProfile_singleGameSection__OTajl {
+.AllWalletProfile_singleGameSection {
     align-items: center;
     display: flex;
     font-size: 16px;
@@ -5218,7 +5228,7 @@ input::-webkit-inner-spin-button {
 }
 
 @media only screen and (max-width:400px) {
-    .AllWalletProfile_gameSection__wEvav {
+    .AllWalletProfile_gameSection {
         max-width: 150px
     }
 }
@@ -5229,7 +5239,7 @@ input::-webkit-inner-spin-button {
     width: 100%
 }
 
-.BankAccountManagement_bankAccountWrapper__B6fCN {
+.BankAccountManagement_bankAccountWrapper {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -5259,14 +5269,14 @@ input::-webkit-inner-spin-button {
     text-align: center
 }
 
-.BankAccountManagement_banksSection__pwCnG {
+.BankAccountManagement_banksSection {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 100%
 }
 
-.BankAccountManagement_bankCardWrapper__a4WLv {
+.BankAccountManagement_bankCardWrapper {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
@@ -5275,7 +5285,7 @@ input::-webkit-inner-spin-button {
     width: 100%
 }
 
-.BankAccountManagement_bankCard__Hv3c8 {
+.BankAccountManagement_bankCard {
     background: linear-gradient(180deg, #212a43, #2d3970);
     border-radius: 8px;
     color: var(--lightColor);
@@ -5286,33 +5296,33 @@ input::-webkit-inner-spin-button {
     width: 100%
 }
 
-.BankAccountManagement_accountNum__aB3Ue {
+.BankAccountManagement_accountNum {
     font-size: 16px;
     font-weight: 500
 }
 
-.BankAccountManagement_username__oXB9T {
+.BankAccountManagement_username {
     font-size: 12px
 }
 
-.BankAccountManagement_bankCardContent__G4Q9\+ {
+.BankAccountManagement_bankCardContent {
     align-items: flex-end;
     display: flex;
     justify-content: space-between
 }
 
-.BankAccountManagement_bankCard__Hv3c8:hover {
+.BankAccountManagement_bankCard:hover {
     background: transparent linear-gradient(90deg, #333d54, #4d576e)
 }
 
-.BankAccountManagement_deleteBankImage__BUjOP {
+.BankAccountManagement_deleteBankImage {
     align-items: center;
     display: flex;
     overflow: hidden;
     width: 18px
 }
 
-.BankAccountManagement_deleteBankImage__BUjOP img {
+.BankAccountManagement_deleteBankImage img {
     cursor: pointer;
     width: 18px
 }
@@ -5331,7 +5341,7 @@ input::-webkit-inner-spin-button {
     width: 100%
 }
 
-.BankAccountManagement_supportStyles__tXaZm {
+.BankAccountManagement_supportStyles {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -5340,13 +5350,13 @@ input::-webkit-inner-spin-button {
     width: 367px
 }
 
-.BankAccountManagement_textStyles__Auuuh {
+.BankAccountManagement_textStyles {
     color: #fff;
     font-size: 14px;
     text-align: center
 }
 
-.BankAccountManagement_supportBtn__ZSJmO {
+.BankAccountManagement_supportBtn {
     align-items: center;
     background-color: initial;
     border: 1px solid #fff;
@@ -5360,24 +5370,24 @@ input::-webkit-inner-spin-button {
     min-width: 115px
 }
 
-.BankAccountManagement_horizontalLine__LtVwO {
+.BankAccountManagement_horizontalLine {
     background: #3f519f;
     height: 1px;
     width: 100%
 }
 
-.BankAccountManagement_addBnksBtn.BankAccountManagement_disabled__pPRFO {
+.BankAccountManagement_addBnksBtn.BankAccountManagement_disabled {
     color: gray;
     cursor: not-allowed
 }
 
-.LinksPage_linkstOverlay__BuYVe {
-    background: url(/static/media/LinksPageBkg.71800247b513c907b10f.webp);
+.LinksPage_linkstOverlay {
+    background: url(../img/LinksPageBG.webp);
     background-size: cover;
     padding: 2% 30%
 }
 
-.LinksPage_linksWrapper__-Y2UN {
+.LinksPage_linksWrapper {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background: #b0b7c511;
@@ -5389,13 +5399,13 @@ input::-webkit-inner-spin-button {
     padding: 3%
 }
 
-.LinksPage_sectionContentWrapper__5YcjG {
+.LinksPage_sectionContentWrapper {
     align-items: center;
     display: flex;
     flex-direction: column
 }
 
-.LinksPage_section__gIp6j {
+.LinksPage_section {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -5403,7 +5413,7 @@ input::-webkit-inner-spin-button {
     width: 70%
 }
 
-.LinksPage_linkContent__eDyJ5 {
+.LinksPage_linkContent {
     align-items: center;
     background: var(--modalBkg);
     border: 1px solid var(--lightColor);
@@ -5416,17 +5426,17 @@ input::-webkit-inner-spin-button {
     padding: 8px
 }
 
-.LinksPage_linkContent__eDyJ5:hover {
+.LinksPage_linkContent:hover {
     background: transparent linear-gradient(228deg, #09152e, #202e49)
 }
 
-.LinksPage_linkNameGrp__MyQ0t {
+.LinksPage_linkNameGrp {
     align-items: center;
     display: flex;
     gap: 15px
 }
 
-.LinksPage_linkNameGrp__MyQ0t span {
+.LinksPage_linkNameGrp span {
     border: 2px solid var(--lightColor);
     border-radius: 50%;
     font-size: 20px;
@@ -5434,7 +5444,7 @@ input::-webkit-inner-spin-button {
     padding: 10px 17px
 }
 
-.LinksPage_noAccountWrapper__BY923 {
+.LinksPage_noAccountWrapper {
     color: var(--lightColor);
     display: flex;
     flex-wrap: wrap;
@@ -5443,18 +5453,18 @@ input::-webkit-inner-spin-button {
     padding-top: 15px
 }
 
-.LinksPage_noAccountWrapper__BY923 div:nth-child(2) {
+.LinksPage_noAccountWrapper div:nth-child(2) {
     cursor: pointer;
     text-decoration: underline
 }
 
-.LinksPage_customerMessageWrapper__FdHsm p {
+.LinksPage_customerMessageWrapper p {
     color: var(--lightColor);
     text-align: center
 }
 
 @media only screen and (max-width:1440px) {
-    .LinksPage_linkstOverlay__BuYVe {
+    .LinksPage_linkstOverlay {
         padding: 2% 15%
     }
 }
@@ -5550,7 +5560,7 @@ input::-webkit-inner-spin-button {
     width: 15px
 }
 
-.Header_headerOverlay__91rTj {
+.Header_headerOverlay {
     align-items: center;
     background: var(--headerBkg);
     color: var(--lightColor);
@@ -5560,12 +5570,12 @@ input::-webkit-inner-spin-button {
     z-index: 6
 }
 
-.Header_headerOverlay__91rTj video {
+.Header_headerOverlay video {
     position: relative;
     width: 100%
 }
 
-.Header_logoImageWrapper__a8a9z {
+.Header_logoImageWrapper {
     align-items: center;
     display: flex;
     gap: 30px;
@@ -5574,11 +5584,11 @@ input::-webkit-inner-spin-button {
     position: absolute
 }
 
-.Header_logoImageWrapper__a8a9z img {
+.Header_logoImageWrapper img {
     cursor: pointer
 }
 
-.Header_logoImageWrapper__a8a9z div {
+.Header_logoImageWrapper div {
     align-items: center;
     display: flex;
     gap: 8px
@@ -5600,7 +5610,7 @@ input::-webkit-inner-spin-button {
     z-index: 4
 }
 
-.SecondaryHeader_siteLogo__h7WO- {
+.SecondaryHeader_siteLogo {
     align-items: center;
     cursor: pointer;
     display: flex;
@@ -5609,7 +5619,7 @@ input::-webkit-inner-spin-button {
     width: 157px
 }
 
-.SecondaryHeader_siteLogoImage__dsiOk {
+.SecondaryHeader_siteLogoImage {
     height: 100%;
     object-fit: contain;
     width: 100%
@@ -5672,30 +5682,30 @@ input::-webkit-inner-spin-button {
     width: 1px
 }
 
-.SecondaryHeader_gameTitleDaga__7PAVm {
+.SecondaryHeader_gameTitleDaga {
     font-size: 18px
 }
 
-.SecondaryHeader_gameImage__bn2nw {
+.SecondaryHeader_gameImage {
     height: 30px
 }
 
-.SecondaryHeader_gameDagaImage__ZyAOl {
+.SecondaryHeader_gameDagaImage {
     height: 40px;
     width: 120px
 }
 
-.SecondaryHeader_iconSize__HJ7Cl {
+.SecondaryHeader_iconSize {
     height: 20px;
     width: 20px
 }
 
-.SecondaryHeader_iconSize2__BrZpl {
+.SecondaryHeader_iconSize2 {
     height: 25px;
     width: 25px
 }
 
-.SecondaryHeader_logoutBtn__YlQZ- {
+.SecondaryHeader_logoutBtn {
     align-items: center;
     background: transparent linear-gradient(180deg, #333755, #040619) 0 0 no-repeat padding-box;
     border: 1px solid #fff;
@@ -5710,8 +5720,8 @@ input::-webkit-inner-spin-button {
     width: 90px
 }
 
-.SecondaryHeader_balanceSection__ZFTPe,
-.SecondaryHeader_transferSection__2Z8wy {
+.SecondaryHeader_balanceSection,
+.SecondaryHeader_transferSection {
     align-items: center;
     background: #1f2133 0 0 no-repeat padding-box;
     border-radius: 7px;
@@ -5725,7 +5735,7 @@ input::-webkit-inner-spin-button {
     padding: 0 5px
 }
 
-.SecondaryHeader_transferButton__FAHxT {
+.SecondaryHeader_transferButton {
     background: transparent linear-gradient(180deg, #e9fef7, #15c7fe) 0 0 no-repeat padding-box;
     border: 0;
     border-radius: 5px;
@@ -5735,7 +5745,7 @@ input::-webkit-inner-spin-button {
     width: 70px
 }
 
-.SecondaryHeader_loginButton__42EEE {
+.SecondaryHeader_loginButton {
     align-items: center;
     display: flex;
     gap: 10px;
@@ -6259,16 +6269,20 @@ input::-webkit-inner-spin-button {
     }
 }
 
-.WalletModal_popoverStyles__AVVM1 {
+.WalletModal_popoverStyles {
     background: linear-gradient(180deg, #1e2134, #2c386e);
     border-radius: 16px;
     box-shadow: inset -2px 0 0 0 #00c1fe, inset 2px 0 0 0 #00c1fe;
     color: #fff;
     padding: 20px;
-    width: 500px
+    width: 500px;
+    position: fixed;
+    top: 54px;
+    right: 15%;
+    z-index: 1000;
 }
 
-.WalletModal_loginHeader__t9nBz {
+.WalletModal_loginHeader {
     align-items: center;
     display: flex;
     font-size: 20px;
@@ -6276,7 +6290,7 @@ input::-webkit-inner-spin-button {
     font-weight: 600;
     gap: 5px;
     justify-content: space-between;
-    padding-bottom: 10px
+    padding-bottom: 10px;
 }
 
 .WalletModal_walletSection__YPpPb {
@@ -6425,41 +6439,41 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px
 }
 
-.GameListing_walletSection__eEEEv {
+.GameListing_walletSection {
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 10px 0 0
 }
 
-.GameListing_dagaSection__j-O8S {
+.GameListing_dagaSection {
     display: flex;
     justify-content: center;
-    position: relative
+    position: relative;
 }
 
-.GameListing_lineOne__g62O9 {
+.GameListing_lineOne {
     border: 1px solid #fee795;
     left: 0;
     position: absolute;
     top: 5px;
-    width: 180px
+    width: 180px;
 }
 
-.GameListing_dagaSectionImg__X7MAW {
+.GameListing_dagaSectionImg {
     height: auto;
-    width: 89px
+    width: 89px;
 }
 
-.GameListing_lineTwo__lzI4B {
+.GameListing_lineTwo {
     border: 1px solid #fee795;
     position: absolute;
     right: 0;
     top: 5px;
-    width: 180px
+    width: 180px;
 }
 
-.GameListing_dagaBalanceWrapper__oCYZd {
+.GameListing_dagaBalanceWrapper {
     align-items: center;
     background: #1e2134;
     border-radius: 16px;
@@ -6468,7 +6482,7 @@ input::-webkit-inner-spin-button {
     padding: 16px
 }
 
-.GameListing_dagaBalance__i4BqB {
+.GameListing_dagaBalance {
     color: #00c1fe;
     font-weight: 700;
     margin-right: 8px
@@ -6491,7 +6505,7 @@ input::-webkit-inner-spin-button {
     font-weight: 700
 }
 
-.GameListing_gameSectionStyles__j-8Pn {
+.GameListing_gameSectionStyles {
     border-bottom: 1px solid #3f519f;
     border-radius: 14px 14px 0 0;
     display: flex;
@@ -6532,7 +6546,7 @@ input::-webkit-inner-spin-button {
     position: relative
 }
 
-.GameListing_buttonStyles__9JGxJ {
+.GameListing_buttonStyles {
     background: linear-gradient(180deg, #00c1fe, #163d75);
     border: 1px solid #06b9f3;
     border-radius: 8px;
@@ -6541,12 +6555,12 @@ input::-webkit-inner-spin-button {
     height: 48px
 }
 
-.GameListing_buttonStyles__9JGxJ:hover {
+.GameListing_buttonStyles:hover {
     background: linear-gradient(0deg, #06bbf7, #06bbf7);
     color: #fff
 }
 
-.GameListing_disabledButtonStyles__hXe5e {
+.GameListing_disabledbuttonStyles {
     background: #737797;
     border: none;
     border-radius: 8px;
@@ -6578,13 +6592,13 @@ input::-webkit-inner-spin-button {
     width: 0
 }
 
-.UserSection_homeMsgWrapper__JzeBS {
+.UserSection_homeMsgWrapper {
     display: flex;
     justify-content: center;
     width: 100%
 }
 
-.UserSection_homeMsg__Uz12Q {
+.UserSection_homeMsg {
     align-items: center;
     background: var(--modalBkg);
     border: 1px solid var(--pageBorder);
@@ -6611,7 +6625,7 @@ input::-webkit-inner-spin-button {
     justify-content: space-between
 }
 
-.UserSection_homeMsg__Uz12Q img {
+.UserSection_homeMsg img {
     -webkit-animation: UserSection_shake__5DCn5 2s ease infinite;
     animation: UserSection_shake__5DCn5 2s ease infinite;
     cursor: pointer;
@@ -6777,11 +6791,11 @@ input::-webkit-inner-spin-button {
 }
 
 @media only screen and (max-width:1024px) {
-    .UserSection_homeMsgWrapper__JzeBS {
+    .UserSection_homeMsgWrapper {
         justify-content: center
     }
 
-    .UserSection_homeMsg__Uz12Q {
+    .UserSection_homeMsg {
         margin-bottom: -15px;
         margin-left: 10px;
         width: 85%
@@ -7315,7 +7329,7 @@ input::-webkit-inner-spin-button {
     }
 }
 
-.Android_androidWrapper__ZnPnS {
+.Android_androidWrapper {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background: var(--lightBkg);
@@ -7327,33 +7341,33 @@ input::-webkit-inner-spin-button {
     width: calc(100% - 60px)
 }
 
-.Android_ImageCard__IIR4p,
-.Android_androidWrapper__ZnPnS {
+.Android_ImageCard,
+.Android_androidWrapper {
     border: 1px solid var(--pageBorder);
     border-radius: var(--modalRadius)
 }
 
-.Android_ImageCard__IIR4p {
+.Android_ImageCard {
     background: var(--modalBkg);
     cursor: pointer;
     padding: 0 15px 15px
 }
 
-.Android_ImageCard__IIR4p p {
+.Android_ImageCard p {
     color: var(--lightColor);
     font-size: 1.1rem;
     font-weight: 700;
     margin: 10px 0
 }
 
-.Android_ImageCard__IIR4p img {
+.Android_ImageCard img {
     border: 1px solid var(--pageBorder);
     border-radius: 10px;
     height: 350px;
     width: 180px
 }
 
-.DownloadVpn_androidOverlay__U7dHv {
+.DownloadVpn_androidOverlay {
     align-items: center;
     background: url(/static/media/DownloadBkg.6550472bea69e33afeec.webp);
     background-size: cover;
@@ -7364,7 +7378,7 @@ input::-webkit-inner-spin-button {
     padding: 30px 15%
 }
 
-.DownloadVpn_downloadsOverlay__Zl-N\+ {
+.DownloadVpn_downloadsOverlay {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -7374,14 +7388,14 @@ input::-webkit-inner-spin-button {
     width: 100%
 }
 
-.DownloadVpn_downloadWrapper__aH7tV {
+.DownloadVpn_downloadWrapper {
     align-items: center;
     display: flex;
     justify-content: space-between;
     width: 100%
 }
 
-.DownloadVpn_backSection__OkJUl {
+.DownloadVpn_backSection {
     align-items: center;
     color: var(--goldColor);
     display: flex;
@@ -7389,12 +7403,12 @@ input::-webkit-inner-spin-button {
     gap: 20px
 }
 
-.DownloadVpn_backSection__OkJUl img {
+.DownloadVpn_backSection img {
     cursor: pointer;
     width: 10px
 }
 
-.DownloadVpn_downloadButton__X\+O5a :before {
+.DownloadVpn_downloadButton :before {
     background: var(--goldColor);
     bottom: 0;
     -webkit-filter: blur(1em);
@@ -7409,10 +7423,10 @@ input::-webkit-inner-spin-button {
     transform: translateY(120%) rotateX(95deg) scaleY(.35)
 }
 
-.DownloadVpn_downloadButton__X\+O5a {
+.DownloadVpn_downloadButton {
     align-items: center;
-    -webkit-animation: DownloadVpn_border-flicker__ecXhl 2s linear infinite;
-    animation: DownloadVpn_border-flicker__ecXhl 2s linear infinite;
+    -webkit-animation: DownloadVpn_border-flicker 2s linear infinite;
+    animation: DownloadVpn_border-flicker 2s linear infinite;
     background: var(--gameBtnBkg);
     border: .15em solid var(--goldColor);
     border-radius: .45em;
@@ -7432,54 +7446,54 @@ input::-webkit-inner-spin-button {
     width: fit-content
 }
 
-.DownloadVpn_downloadButton__X\+O5a a {
+.DownloadVpn_downloadButton a {
     color: var(--darkColor);
     text-decoration: none
 }
 
-.DownloadVpn_glowingTxt__atuUD {
-    -webkit-animation: DownloadVpn_text-flicker__kQinH 3s linear infinite;
-    animation: DownloadVpn_text-flicker__kQinH 3s linear infinite;
+.DownloadVpn_glowingTxt {
+    -webkit-animation: DownloadVpn_text-flicker 3s linear infinite;
+    animation: DownloadVpn_text-flicker 3s linear infinite;
     -webkit-text-shadow: 0 0 .125em hsla(0, 0%, 100%, .3), 0 0 .45em var(--goldColor);
     -moz-text-shadow: 0 0 .125em hsla(0, 0%, 100%, .3), 0 0 .45em var(--goldColor);
     text-shadow: 0 0 .125em hsla(0, 0%, 100%, .3), 0 0 .45em var(--goldColor)
 }
 
-.DownloadVpn_faultyLetter__4ppmE {
-    -webkit-animation: DownloadVpn_faulty-flicker__Abh8y 2s linear infinite;
-    animation: DownloadVpn_faulty-flicker__Abh8y 2s linear infinite;
+.DownloadVpn_faultyLetter {
+    -webkit-animation: DownloadVpn_faulty-flicker 2s linear infinite;
+    animation: DownloadVpn_faulty-flicker 2s linear infinite;
     opacity: .5
 }
 
-.DownloadVpn_downloadButton__X\+O5a:hover {
+.DownloadVpn_downloadButton:hover {
     -webkit-animation: none;
     animation: none;
     text-shadow: none
 }
 
-.DownloadVpn_downloadButton__X\+O5a:hover .DownloadVpn_glowingTxt__atuUD {
+.DownloadVpn_downloadButton:hover .DownloadVpn_glowingTxt {
     -webkit-animation: none;
     animation: none
 }
 
-.DownloadVpn_downloadButton__X\+O5a:hover .DownloadVpn_faultyLetter__4ppmE {
+.DownloadVpn_downloadButton:hover .DownloadVpn_faultyLetter {
     -webkit-animation: none;
     animation: none;
     opacity: 1;
     text-shadow: none
 }
 
-.DownloadVpn_downloadButton__X\+O5a:hover:before {
+.DownloadVpn_downloadButton:hover:before {
     -webkit-filter: blur(1.5em);
     filter: blur(1.5em);
     opacity: 1
 }
 
-.DownloadVpn_downloadButton__X\+O5a:hover:after {
+.DownloadVpn_downloadButton:hover:after {
     opacity: 1
 }
 
-@-webkit-keyframes DownloadVpn_faulty-flicker__Abh8y {
+@-webkit-keyframes DownloadVpn_faulty-flicker {
     0% {
         opacity: .1
     }
@@ -7517,7 +7531,7 @@ input::-webkit-inner-spin-button {
     }
 }
 
-@keyframes DownloadVpn_faulty-flicker__Abh8y {
+@keyframes DownloadVpn_faulty-flicker {
     0% {
         opacity: .1
     }
@@ -7555,7 +7569,7 @@ input::-webkit-inner-spin-button {
     }
 }
 
-@-webkit-keyframes DownloadVpn_text-flicker__kQinH {
+@-webkit-keyframes DownloadVpn_text-flicker {
     0% {
         opacity: .1
     }
@@ -7605,7 +7619,7 @@ input::-webkit-inner-spin-button {
     }
 }
 
-@keyframes DownloadVpn_text-flicker__kQinH {
+@keyframes DownloadVpn_text-flicker {
     0% {
         opacity: .1
     }
@@ -7655,7 +7669,7 @@ input::-webkit-inner-spin-button {
     }
 }
 
-@-webkit-keyframes DownloadVpn_border-flicker__ecXhl {
+@-webkit-keyframes DownloadVpn_border-flicker {
     0% {
         opacity: .1
     }
@@ -7681,7 +7695,7 @@ input::-webkit-inner-spin-button {
     }
 }
 
-@keyframes DownloadVpn_border-flicker__ecXhl {
+@keyframes DownloadVpn_border-flicker {
     0% {
         opacity: .1
     }
@@ -7707,7 +7721,7 @@ input::-webkit-inner-spin-button {
     }
 }
 
-.DownloadVpn_androidWrapper__-9sq1 {
+.DownloadVpn_androidWrapper {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background: var(--lightBkg);
@@ -7719,33 +7733,33 @@ input::-webkit-inner-spin-button {
     width: calc(100% - 60px)
 }
 
-.DownloadVpn_ImageCard__vjLWW,
-.DownloadVpn_androidWrapper__-9sq1 {
+.DownloadVpn_ImageCard,
+.DownloadVpn_androidWrapper {
     border: 1px solid var(--pageBorder);
     border-radius: var(--modalRadius)
 }
 
-.DownloadVpn_ImageCard__vjLWW {
+.DownloadVpn_ImageCard {
     background: var(--modalBkg);
     cursor: pointer;
     padding: 0 15px 15px
 }
 
-.DownloadVpn_ImageCard__vjLWW p {
+.DownloadVpn_ImageCard p {
     color: var(--lightColor);
     font-size: 1.1rem;
     font-weight: 700;
     margin: 10px 0
 }
 
-.DownloadVpn_ImageCard__vjLWW img {
+.DownloadVpn_ImageCard img {
     border: 1px solid var(--pageBorder);
     border-radius: 10px;
     height: 350px;
     width: 180px
 }
 
-.TermsConditions_contentOverlay__km8rm {
+.TermsConditions_contentOverlay {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background: #ddd3d300;
@@ -7757,27 +7771,27 @@ input::-webkit-inner-spin-button {
 }
 
 @media only screen and (max-width:1440px) {
-    .TermsConditions_contentOverlay__km8rm {
+    .TermsConditions_contentOverlay {
         margin: 1% 2%
     }
 }
 
-.ImageSection_imageContentOverlay__BJEqc {
+.ImageSection_imageContentOverlay {
     display: flex;
     flex-direction: column;
     justify-content: center
 }
 
-.ImageSection_imageWrapper__J0ni3 {
+.ImageSection_imageWrapper {
     display: flex;
     justify-content: center
 }
 
-.ImageSection_imageContentOverlay__BJEqc p {
+.ImageSection_imageContentOverlay p {
     text-align: center
 }
 
-.PlayResponsibility_contentOverlay__PNeO0 {
+.PlayResponsibility_contentOverlay {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background: #ddd3d300;
@@ -7789,12 +7803,12 @@ input::-webkit-inner-spin-button {
 }
 
 @media only screen and (max-width:1440px) {
-    .PlayResponsibility_contentOverlay__PNeO0 {
+    .PlayResponsibility_contentOverlay {
         margin: 1% 2%
     }
 }
 
-.Disclaimer_contentOverlay__EnpJJ {
+.Disclaimer_contentOverlay {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background: #ddd3d300;
@@ -7806,12 +7820,12 @@ input::-webkit-inner-spin-button {
 }
 
 @media only screen and (max-width:1440px) {
-    .Disclaimer_contentOverlay__EnpJJ {
+    .Disclaimer_contentOverlay {
         margin: 1% 2%
     }
 }
 
-.Privacy_contentOverlay__J9ECm {
+.Privacy_contentOverlay {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background: #ddd3d300;
@@ -7823,12 +7837,12 @@ input::-webkit-inner-spin-button {
 }
 
 @media only screen and (max-width:1440px) {
-    .Privacy_contentOverlay__J9ECm {
+    .Privacy_contentOverlay {
         margin: 1% 2%
     }
 }
 
-.DepositInstructions_contentOverlay__ambSp {
+.DepositInstructions_contentOverlay {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background: #ddd3d300;
@@ -7840,12 +7854,12 @@ input::-webkit-inner-spin-button {
 }
 
 @media only screen and (max-width:1440px) {
-    .DepositInstructions_contentOverlay__ambSp {
+    .DepositInstructions_contentOverlay {
         margin: 1% 2%
     }
 }
 
-.WithdrawInstructions_contentOverlay__PGvYs {
+.WithdrawInstructions_contentOverlay {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background: #ddd3d300;
@@ -7857,7 +7871,7 @@ input::-webkit-inner-spin-button {
 }
 
 @media only screen and (max-width:1440px) {
-    .WithdrawInstructions_contentOverlay__PGvYs {
+    .WithdrawInstructions_contentOverlay {
         margin: 1% 2%
     }
 }
