@@ -510,7 +510,7 @@
     </div>
 
     <!--AllWallet Modal-->
-    <div class="WalletModal_popoverStyles" style="display: none;">
+    <div class="WalletModal_popoverStyles">
         <div class="WalletModal_loginHeader">Tất cả các ví
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" color="#00C1FE" height="26" width="26" xmlns="http://www.w3.org/2000/svg" style="color: rgb(0, 193, 254); cursor: pointer;">
                 <path
@@ -528,7 +528,11 @@
                 <img src="./PC_assets/img/SecondaryHeader_game_img.png" style="width: 30px; height: 30px;">
                 <span style="padding-left: 16px;">ĐÁ GÀ</span>
                 <div style="margin-left: auto; display: flex; align-items: center;">
-                    <span class="GameListing_dagaBalance">0 điểm</span>
+                    <span class="GameListing_dagaBalance">10 điểm</span>
+                    <!--point>0 and display-->
+                    <button style="cursor:pointer; background:none; border:none;">
+                        <img src="./PC_assets/img/turnback.png" style="width: 30px;height: 30px;">
+                    </button>
                     <span>
                         <span style="display: flex; border-bottom: 1px solid rgb(255, 255, 255);">
                             <span style="padding-right: 4px;">Tải lại ví</span>
@@ -537,7 +541,10 @@
                     </div>
             </div>
             <div class="GameListing_gameSectionStyles"></div>
-            <button disabled class="GameListing_disabledbuttonStyles">Chuyển mọi thứ vào tài khoản chính</button>
+            <!--point>0-->
+            <button disabled class="GameListing_buttonStyles">Chuyển mọi thứ vào tài khoản chính</button>
+            <!--point=0-->
+            <button disabled class="GameListing_disabledbuttonStyles" style="display: none;">Chuyển mọi thứ vào tài khoản chính</button>
         </div>
     </div>
 
@@ -774,7 +781,7 @@
     </div>
 
     <!--Transfer points-->
-    <div class="PlayGameModal_modalTopOverlay">
+    <div class="PlayGameModal_modalTopOverlay" style="display: none;">
         <div class="PlayGameModal_modalTopWrapper">
             <div class="PlayGameModal_modalOverlay">
                 <div class="PlayGameModal_modalWrapper">
