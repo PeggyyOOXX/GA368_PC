@@ -3418,7 +3418,7 @@ input::-webkit-inner-spin-button {
     }
 }
 
-.LeftSection_BankDetailsSection__EqYRO {
+.LeftSection_BankDetailsSection {
     padding: 11px 0 0 15px;
     width: 443px
 }
@@ -3430,13 +3430,17 @@ input::-webkit-inner-spin-button {
     text-align: center
 }
 
-.LeftSection_depositGuide__gNNr5 {
+.LeftSection_depositGuide {
     font-size: 12.5px;
     text-align: left;
     width: 100%
 }
+.LeftSection_depositinfo{
+    background-color: #8f8f99;
+    width: fit-content;
+}
 
-.LeftSection_suggestMsg__DlTA\+ {
+.LeftSection_suggestMsg {
     font-size: 13px;
     text-align: left
 }
@@ -3471,14 +3475,16 @@ input::-webkit-inner-spin-button {
     text-align: left
 }
 
-.LeftSection_download_button__iMvMJ {
+.LeftSection_download_button {
     background-color: #1f2738;
     border-radius: 10px;
     color: #fff;
     cursor: pointer;
     margin-top: 5px;
     padding: 5px 10px;
-    text-decoration: none
+    text-decoration: none;
+    font-weight: 100;
+    border: none;
 }
 
 .LeftSection_buttonStyle__tk2rA {
@@ -3525,7 +3531,7 @@ input::-webkit-inner-spin-button {
     text-align: left
 }
 
-.LeftSection_dottedWrapper__Uijs7 {
+.LeftSection_dottedWrapper {
     border-bottom: 3px dashed #707070;
     display: flex;
     justify-content: space-between;
@@ -4210,7 +4216,7 @@ input::-webkit-inner-spin-button {
     width: 111px
 }
 
-.Transactions_processingChip__vNBnT {
+.Transactions_processingChip {
     background-color: #482b00;
     border-color: #ffc36a;
     color: #ffc36a
@@ -4248,9 +4254,7 @@ input::-webkit-inner-spin-button {
 }
 
 .SingleTransactionPopup_singleTranContentOverlay {
-    display: flex;
     height: 100%;
-    justify-content: center;
     margin: auto;
     width: 100%;
 }
@@ -4292,22 +4296,35 @@ input::-webkit-inner-spin-button {
     color: var(--lightColor)
 }
 
-.QRpage_leftSection__bRsxt {
-    border-left: 1px solid #707070;
+.QRpage_leftSection {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 100%
+    width: 100%;
+    align-items: center;
+}
+.QRpage_scantext{
+    color: #ff5746;
+    font-weight: 600;
+}
+.QRpage_downloadBtn{
+    color: #fff;
+    background-color: #212639;
+    font-weight: 100;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    margin-top: 3px;
 }
 
-.QRpage_responsiveIframe__yzvWm {
+.QRpage_responsiveIframe {
     border: none;
     height: 550px;
     overflow: hidden;
     width: 100%
 }
 
-.QRpage_CloseBtn__8A2U- {
+.QRpage_CloseBtn {
     background-color: #6665fd;
     border: none;
     color: #fff;
@@ -4669,9 +4686,12 @@ input::-webkit-inner-spin-button {
     }
 }
 
-.AddAccountModal_modalOverlay__vGXPg {
+.AddAccountModal_modalOverlay {
     height: 100%;
     width: 100%
+}
+.AddAccountModal_settingbank{
+    width: 50%;
 }
 
 .AddAccountModal_modalTitle__m8N6- {
@@ -4679,7 +4699,7 @@ input::-webkit-inner-spin-button {
     font-size: 14px
 }
 
-.AddAccountModal_addAccountFormWrapper__tyJ\+a {
+.AddAccountModal_addAccountFormWrapper {
     display: flex;
     flex-direction: column;
     gap: 15px
@@ -4696,14 +4716,14 @@ input::-webkit-inner-spin-button {
     color: #ff5746
 }
 
-.AddAccountModal_inputContainerWrapper__h4oag {
+.AddAccountModal_inputContainerWrapper {
     display: flex;
     flex-direction: column;
     gap: 5px;
     width: 100%
 }
 
-.AddAccountModal_inputContainerWrapper__h4oag input {
+.AddAccountModal_inputContainerWrapper input {
     background-color: initial;
     border: 0;
     color: var(--lightColor);
@@ -4714,18 +4734,171 @@ input::-webkit-inner-spin-button {
     width: 90%
 }
 
-.AddAccountModal_inputAmountRequired__MPrbs {
+.AddAccountModal_inputAmountRequired {
     color: #ff9a21;
     font-size: 14px;
     margin-top: 8px
 }
+.AddAccountModal_bankdropdownwapper{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+    color: rgba(0, 0, 0, 0.87);
+    box-sizing: border-box;
+    cursor: text;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    width: 100%; 
+    background: rgb(44, 56, 110); 
+    border: 1px solid rgb(63, 81, 159); 
+    border-radius: 8px; 
+    height: 45px;
+}
+.AddAccountModal_bankdropdownconfirm{
+    appearance: none;
+    user-select: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font: inherit;
+    letter-spacing: inherit;
+    color: currentcolor;
+    border: 0px;
+    box-sizing: content-box;
+    background: none;
+    height: 1.4375em;
+    margin: 0px;
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+    min-width: 0px;
+    width: 100%;
+    animation-name: mui-auto-fill-cancel;
+    animation-duration: 10ms;
+    padding: 16.5px 14px;
+}
+.AddAccountModal_bankdropdowninput{
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+.AddAccountModal_bankdropdownmoreicon{
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 7px;
+    top: calc(50% - 0.5em);
+    pointer-events: none;
+    color: rgba(255, 255, 255, 1);
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.AddAccountModal_bankdropdownfieldset{
+    text-align: left;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    top: -5px;
+    left: 0px;
+    pointer-events: none;
+    min-width: 0%;
+    margin: 0px;
+    padding: 0px 8px;
+    border-radius: inherit;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    border-color: rgba(0, 0, 0, 0.23);
+}
+.AddAccountModal_bankdropdownlegend{
+    float: unset;
+    width: auto;
+    line-height: 11px;
+    overflow: hidden;
+    padding: 0px;
+    transition: width 150ms cubic-bezier(0, 0, 0.2, 1);
+}
+.AddAccountModal_bankdropdownlistwapper{
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px -3px, rgba(0, 0, 0, 0.14) 0px 8px 10px 1px, rgba(0, 0, 0, 0.12) 0px 3px 14px 2px;
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 16px;
+    max-width: calc(100% - 32px);
+    max-height: calc(100% - 10px);
+    background-color: rgb(44, 56, 110);
+    margin: 4px 0;
+    padding-top: 0px;
+    outline: 0px;
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(63, 81, 159);
+    border-image: initial;
+    opacity: 1; 
+    transform: none; 
+    min-width: 275px; 
+    transition: opacity 412ms cubic-bezier(0.4, 0, 0.2, 1), transform 274ms cubic-bezier(0.4, 0, 0.2, 1); 
+    top: 0px;
+}
+.AddAccountModal_bankdropdownlist{
+    list-style: none;
+    margin: 0px;
+    padding: 8px 0px;
+    position: relative;
+    outline: 0px;
+}
+.AddAccountModal_bankdropdownlistoptions{
+    background: rgb(44, 56, 110);
+    color: rgb(255, 255, 255)!important;
+    border-bottom: 1px solid rgb(63, 81, 159);
+    margin: 0px 14px;
+    background-color: transparent;
+    outline: 0px;
+    border-radius: 0px;
+    padding: 16px 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    color: inherit;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    min-height: 48px;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+.AddAccountModal_listoptionsbank{
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+    inset: 0px;
+    border-radius: inherit;
+}
 
-.AddAccountModal_inputContainer__7OUqk {
+.AddAccountModal_inputContainer {
     gap: 5px;
     width: 100%
 }
 
-.AddAccountModal_inputWrapper__64xT9 {
+.AddAccountModal_inputWrapper {
     background: #2c386e;
     border: 1px solid #3f519f;
     border-radius: 8px;
@@ -4734,7 +4907,7 @@ input::-webkit-inner-spin-button {
     position: relative
 }
 
-.AddAccountModal_inputContainer__7OUqk {
+.AddAccountModal_inputContainer {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
@@ -4742,19 +4915,19 @@ input::-webkit-inner-spin-button {
     justify-content: center
 }
 
-.AddAccountModal_requiredLabel__OObFe {
+.AddAccountModal_requiredLabel {
     color: #fff;
     display: flex;
     font-size: 14px;
     gap: 5px
 }
 
-.AddAccountModal_requiredLabel__OObFe span {
+.AddAccountModal_requiredLabel span {
     color: #c79353;
     font-size: 13px
 }
 
-.AddAccountModal_inputItem__GBxbj {
+.AddAccountModal_inputItem {
     align-items: center;
     display: flex;
     font-size: 12px;
@@ -4762,17 +4935,17 @@ input::-webkit-inner-spin-button {
     width: 100%
 }
 
-.AddAccountModal_inputItem__GBxbj input::-webkit-input-placeholder {
+.AddAccountModal_inputItem input::-webkit-input-placeholder {
     color: var(--inputPlaceholder);
     opacity: 50%
 }
 
-.AddAccountModal_inputItem__GBxbj input::placeholder {
+.AddAccountModal_inputItem input::placeholder {
     color: var(--inputPlaceholder);
     opacity: 50%
 }
 
-.AddAccountModal_inputItem__GBxbj input {
+.AddAccountModal_inputItem input {
     background-color: initial;
     border: none;
     color: var(--lightColor);
@@ -4781,10 +4954,10 @@ input::-webkit-inner-spin-button {
     width: 100%
 }
 
-.AddAccountModal_inputItem__GBxbj input:active,
-.AddAccountModal_inputItem__GBxbj input:focus,
-.AddAccountModal_inputItem__GBxbj input:focus-visible,
-.AddAccountModal_inputItem__GBxbj input:hover {
+.AddAccountModal_inputItem input:active,
+.AddAccountModal_inputItem input:focus,
+.AddAccountModal_inputItem input:focus-visible,
+.AddAccountModal_inputItem input:hover {
     border: none;
     outline: none
 }
@@ -4832,7 +5005,7 @@ input::-webkit-inner-spin-button {
     text-align: center
 }
 
-.AddAccountModal_button__-m5pv {
+.AddAccountModal_button {
     background: #303351 0 0 no-repeat padding-box;
     border: 1px solid #00c1fe;
     border-radius: 8px;
@@ -4846,7 +5019,7 @@ input::-webkit-inner-spin-button {
     width: 100%
 }
 
-.AddAccountModal_disabled__kskOv {
+.AddAccountModal_disabled {
     background: #737797;
     border: none;
     box-shadow: none;
@@ -4854,24 +5027,24 @@ input::-webkit-inner-spin-button {
     cursor: not-allowed
 }
 
-.AddAccountModal_disabled__kskOv:hover {
+.AddAccountModal_disabled:hover {
     background: var(--disableBkg);
     color: var(--disableColor)
 }
 
-.AddAccountModal_formButton__gOJyH {
+.AddAccountModal_formButton {
     align-items: center;
     display: flex;
     gap: 15px;
     justify-content: center
 }
 
-.Step2_WithdrawBalanceWrapper__Oc4Gw {
+.Step2_WithdrawBalanceWrapper {
     display: flex;
     gap: 22px
 }
 
-.Step2_withdrawOverlay__O\+6K3 {
+.Step2_withdrawOverlay {
     display: flex;
     flex-direction: column;
     gap: 7.4px;
@@ -4902,13 +5075,13 @@ input::-webkit-inner-spin-button {
     margin: 6px 0
 }
 
-.Step2_backBtn__-ydib {
+.Step2_backBtn {
     background-color: initial;
     color: #00c1fe
 }
 
-.Step2_backBtn__-ydib,
-.Step2_withdrawBtn__MEOKI {
+.Step2_backBtn,
+.Step2_withdrawBtn {
     align-items: left;
     border: 1px solid #00c1fe;
     border-radius: 8px;
@@ -4921,7 +5094,7 @@ input::-webkit-inner-spin-button {
     width: 100%
 }
 
-.Step2_withdrawBtn__MEOKI {
+.Step2_withdrawBtn {
     background: linear-gradient(180deg, #06bbf7, #17346c);
     color: var(--lightColor)
 }
@@ -4938,7 +5111,7 @@ input::-webkit-inner-spin-button {
     color: var(--disableColor)
 }
 
-.Step2_BankSectionOverlay__JDheZ {
+.Step2_BankSectionOverlay {
     width: 100%
 }
 
@@ -4947,7 +5120,7 @@ input::-webkit-inner-spin-button {
     font-size: 16px
 }
 
-.Step2_BankSectionWrapper__TnvfF {
+.Step2_BankSectionWrapper {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -4956,14 +5129,14 @@ input::-webkit-inner-spin-button {
     width: 100%
 }
 
-.Step2_bankCardWrappwr__V8l7a {
+.Step2_bankCardWrappwr {
     cursor: pointer;
     display: flex;
     font-size: 12px;
     width: 100%
 }
 
-.Step2_bankCard__twIPq {
+.Step2_bankCard {
     align-items: center;
     background: linear-gradient(180deg, #212a43, #2d3970);
     border-radius: 8px;
@@ -4975,28 +5148,28 @@ input::-webkit-inner-spin-button {
     width: 100%
 }
 
-.Step2_bankCard__twIPq:hover {
+.Step2_bankCard:hover {
     border-radius: 10px
 }
 
-.Step2_bankCard__twIPq:hover,
-.Step2_selectedBank__aTHJr {
+.Step2_bankCard:hover,
+.Step2_selectedBank {
     background: #393d64 0 0 no-repeat padding-box;
     border: 2px solid var(--primaryColor)
 }
 
-.Step2_selectedBank__aTHJr {
+.Step2_selectedBank {
     border-radius: 5px;
     color: var(--primaryColor)
 }
 
-.Step2_bankCardContent__wgZ5w {
+.Step2_bankCardContent {
     display: flex;
     flex-direction: column;
     gap: 5px
 }
 
-.Step2_supportStyles__Vziif {
+.Step2_supportStyles {
     align-items: center;
     display: flex;
     gap: 10px;
@@ -5004,13 +5177,13 @@ input::-webkit-inner-spin-button {
     padding: 20px
 }
 
-.Step2_textStyles__NevA3 {
+.Step2_textStyles {
     color: #fff;
     font-size: 14px;
     text-align: center
 }
 
-.Step2_supportBtn__o4sA8 {
+.Step2_supportBtn {
     align-items: center;
     background-color: initial;
     border: 1px solid #fff;
@@ -5024,12 +5197,12 @@ input::-webkit-inner-spin-button {
     min-width: 115px
 }
 
-.Step2_buttons__PVjhx {
+.Step2_buttons {
     display: flex;
     gap: 10px
 }
 
-.Step2_AddBankBtnWrapper__62UC4 {
+.Step2_AddBankBtnWrapper {
     align-items: center;
     background: transparent linear-gradient(180deg, #202f4e, #10192d);
     border: 2px solid var(--disableColor);
@@ -5044,11 +5217,11 @@ input::-webkit-inner-spin-button {
     width: 125.5px
 }
 
-.Step2_AddBankBtnWrapper__62UC4:hover {
+.Step2_AddBankBtnWrapper:hover {
     background: transparent linear-gradient(180deg, #10192d, #202f4e)
 }
 
-.Step2_AddBankBtn__maoz- {
+.Step2_AddBankBtn {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -5061,7 +5234,7 @@ input::-webkit-inner-spin-button {
     font-size: 15px
 }
 
-.Step2_addBankImage__dChGr {
+.Step2_addBankImage {
     height: 22px;
     width: 22px
 }
@@ -5075,7 +5248,6 @@ input::-webkit-inner-spin-button {
     position: relative;
     width: 100%
 }
-
 .Withdraw_stepText {
     color: #fff;
     font-weight: 400;
@@ -5092,6 +5264,66 @@ input::-webkit-inner-spin-button {
     display: flex; 
     align-items: center;
     gap: 5px;
+}
+.Withdraw_stepSectionWrapper{
+    width: 50%; display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.Withdraw_stepSectionContainer{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.stepSectionNumgroup{
+    display: flex; 
+    -webkit-box-align: center;
+    align-items: center;
+}
+.stepSectionNumgroup_num{
+    flex-shrink: 0; 
+    display: flex;
+    padding-right: 8px;
+}
+.stepSectionNumgroup_numsvg{
+    color: rgb(25, 118, 210);
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    fill: currentcolor;
+    flex-shrink: 0;
+    font-size: 1.5rem;
+    display: block;
+    transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.stepSectionNumgroup_numsvg-completed{
+    color: rgb(255, 255, 255);
+}
+.stepSectionNumgroup_textWrapper{
+    width: 100%;
+    color: rgba(0, 0, 0, 0.6);
+}
+.stepSectionNumgroup_text{
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+    display: block;
+    transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.Withdraw_stepSectionlineWrapper{
+    flex: 1 1 auto;
+}
+.Withdraw_stepSectionline{
+    display: block;
+    border-color: rgb(189, 189, 189);
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+.stepSectionNumgroup_numtext{
+    fill: rgb(255, 255, 255);
+    font-size: 0.75rem;
 }
 
 .AllWalletProfile_walletSection {
